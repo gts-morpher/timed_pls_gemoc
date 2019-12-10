@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11/src-gen"
+    creationIcons="false" editDirectory="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.edit/src-gen"
+    editorDirectory="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.editor/src-gen"
+    modelPluginID="uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11" modelName="pls11"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>pls11.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="pls11" basePackage="uk.ac.kcl.inf.szschaler.gts_morpher.pls"
+      disposableProviderFactory="true" ecorePackage="pls11.ecore#/">
+    <genClasses ecoreClass="pls11.ecore#//ProductionLineModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pls11.ecore#//ProductionLineModel/elts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pls11.ecore#//ProductionLineModel/parts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pls11.ecore#//ProductionLineModel/actionexecs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pls11.ecore#//ProductionLineModel/clock"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="pls11.ecore#//Machine">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pls11.ecore#//Machine/out"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="pls11.ecore#//Container">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pls11.ecore#//Container/parts"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="pls11.ecore#//Part"/>
+    <genClasses ecoreClass="pls11.ecore#//Conveyor">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pls11.ecore#//Conveyor/tray"/>
+    </genClasses>
+    <genClasses ecoreClass="pls11.ecore#//Tray"/>
+    <genClasses ecoreClass="pls11.ecore#//Hammer">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pls11.ecore#//Hammer/head"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pls11.ecore#//Hammer/handle"/>
+    </genClasses>
+    <genClasses ecoreClass="pls11.ecore#//Head"/>
+    <genClasses ecoreClass="pls11.ecore#//Handle"/>
+    <genClasses ecoreClass="pls11.ecore#//Polisher"/>
+    <genClasses ecoreClass="pls11.ecore#//Assembler"/>
+    <genClasses ecoreClass="pls11.ecore#//GenHead"/>
+    <genClasses ecoreClass="pls11.ecore#//GenHandle"/>
+    <genClasses ecoreClass="pls11.ecore#//Operator">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pls11.ecore#//Operator/tray"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pls11.ecore#//Operator/counter"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="pls11.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pls11.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="pls11.ecore#//Transformer">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pls11.ecore#//Transformer/in"/>
+    </genClasses>
+    <genClasses ecoreClass="pls11.ecore#//ActionExec">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pls11.ecore#//ActionExec/namedelement"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pls11.ecore#//ActionExec/parts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pls11.ecore#//ActionExec/timer"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

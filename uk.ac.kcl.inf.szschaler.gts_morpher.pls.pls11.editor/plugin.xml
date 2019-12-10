@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated pls11 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.presentation.pls11ModelWizardID"
+            name="%_UI_pls11ModelWizard_label"
+            class="uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.presentation.pls11ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/pls11ModelFile.gif">
+         <description>%_UI_pls11ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated pls11 -->
+      <editor
+            id="uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.presentation.pls11EditorID"
+            name="%_UI_pls11Editor_label"
+            icon="icons/full/obj16/pls11ModelFile.gif"
+            extensions="pls11"
+            class="uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.presentation.pls11Editor"
+            contributorClass="uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.presentation.pls11ActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

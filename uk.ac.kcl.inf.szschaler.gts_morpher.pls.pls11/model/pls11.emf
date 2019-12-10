@@ -1,0 +1,93 @@
+@namespace(uri="http://www.kcl.ac.uk/metamodels/pls11", prefix="pls11")
+package pls11;
+
+class ProductionLineModel {
+  val NamedElement[*] elts;
+
+  @aspect
+  val Part[*] parts;
+
+  @aspect
+  val ActionExec[*] actionexecs;
+
+  @aspect
+  attr double clock;
+}
+
+abstract class Machine extends NamedElement {
+  ref Conveyor out;
+}
+
+abstract class Container extends NamedElement {
+
+  @aspect
+  ref Part[*] parts;
+}
+
+@aspect
+abstract class Part {
+}
+
+class Conveyor extends Container {
+  ref Tray tray;
+}
+
+class Tray extends Container {
+}
+
+@aspect
+class Hammer extends Part {
+
+  @aspect
+  ref Head[*] head;
+
+  @aspect
+  ref Handle[*] handle;
+}
+
+@aspect
+class Head extends Part {
+}
+
+@aspect
+class Handle extends Part {
+}
+
+class Polisher extends Transformer {
+}
+
+class Assembler extends Transformer {
+}
+
+class GenHead extends Machine {
+}
+
+class GenHandle extends Machine {
+}
+
+class Operator extends NamedElement {
+  ref Tray tray;
+  attr int counter;
+}
+
+abstract class NamedElement {
+  attr String name;
+}
+
+abstract class Transformer extends Machine {
+  ref Tray in;
+}
+
+@aspect
+class ActionExec {
+
+  @aspect
+  ref NamedElement[*] namedelement;
+
+  @aspect
+  ref Part[*] parts;
+
+  @aspect
+  attr double timer;
+}
+

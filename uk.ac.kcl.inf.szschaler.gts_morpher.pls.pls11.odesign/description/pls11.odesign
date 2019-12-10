@@ -2,7 +2,6 @@
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="pls11" version="12.0.0.2017041100">
   <ownedViewpoints name="Production Line Systems" modelFileExtension="pls">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Production Line Diagram" domainClass="ProductionLineModel" enablePopupBars="true">
-      <metamodel href="http://www.kcl.ac.uk/metamodels/pls11#/"/>
       <defaultLayer name="Default">
         <nodeMappings name="GenHandle" domainClass="GenHandle">
           <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/icons/GenHandle.png">
@@ -17,7 +16,7 @@
           </style>
         </nodeMappings>
         <nodeMappings name="Assembler" domainClass="Assembler">
-          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/icons/Assembler.png">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/icons/Assembler.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>

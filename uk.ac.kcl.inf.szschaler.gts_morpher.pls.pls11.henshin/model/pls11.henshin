@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_6aPRwAcQEeqCBumwOxKgRg" name="plsRules">
+  <imports href="http://www.kcl.ac.uk/metamodels/pls11#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_ECtn4AcREeqCBumwOxKgRg" name="GenHeadRealization">
+    <lhs xmi:id="_ECwrMAcREeqCBumwOxKgRg" name="Lhs">
+      <nodes xmi:id="_Hf4SUAcREeqCBumwOxKgRg" name="ghe" incoming="_LZDcoBIwEeqE9pGv-1CfMw" outgoing="_SOfxIAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//GenHead"/>
+      </nodes>
+      <nodes xmi:id="_J1FPIAcREeqCBumwOxKgRg" name="c" incoming="_SOfxIAcREeqCBumwOxKgRg _LzHicBIwEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_MjYocAcREeqCBumwOxKgRg" name="pls" outgoing="_KhPD0BIwEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_JPz4MBIwEeqE9pGv-1CfMw" name="ae" incoming="_KhPD0BIwEeqE9pGv-1CfMw" outgoing="_LZDcoBIwEeqE9pGv-1CfMw _LzHicBIwEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_feENoBIxEeqE9pGv-1CfMw" value="0.0">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_SOfxIAcREeqCBumwOxKgRg" source="_Hf4SUAcREeqCBumwOxKgRg" target="_J1FPIAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+      <edges xmi:id="_KhPD0BIwEeqE9pGv-1CfMw" source="_MjYocAcREeqCBumwOxKgRg" target="_JPz4MBIwEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+      <edges xmi:id="_LZDcoBIwEeqE9pGv-1CfMw" source="_JPz4MBIwEeqE9pGv-1CfMw" target="_Hf4SUAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_LzHicBIwEeqE9pGv-1CfMw" source="_JPz4MBIwEeqE9pGv-1CfMw" target="_J1FPIAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_ECwrMQcREeqCBumwOxKgRg" name="Rhs">
+      <nodes xmi:id="_Hf4SUQcREeqCBumwOxKgRg" name="ghe" outgoing="_SOfxIQcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//GenHead"/>
+      </nodes>
+      <nodes xmi:id="_J1FPIQcREeqCBumwOxKgRg" name="c" incoming="_SOfxIQcREeqCBumwOxKgRg" outgoing="_Sm2mwAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_MjYocQcREeqCBumwOxKgRg" name="pls" outgoing="_RClXoAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_OWngoAcREeqCBumwOxKgRg" name="h" incoming="_RClXoAcREeqCBumwOxKgRg _Sm2mwAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Head"/>
+      </nodes>
+      <edges xmi:id="_RClXoAcREeqCBumwOxKgRg" source="_MjYocQcREeqCBumwOxKgRg" target="_OWngoAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/parts"/>
+      </edges>
+      <edges xmi:id="_SOfxIQcREeqCBumwOxKgRg" source="_Hf4SUQcREeqCBumwOxKgRg" target="_J1FPIQcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+      <edges xmi:id="_Sm2mwAcREeqCBumwOxKgRg" source="_J1FPIQcREeqCBumwOxKgRg" target="_OWngoAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_Hf4SUgcREeqCBumwOxKgRg" origin="_Hf4SUAcREeqCBumwOxKgRg" image="_Hf4SUQcREeqCBumwOxKgRg"/>
+    <mappings xmi:id="_J1FPIgcREeqCBumwOxKgRg" origin="_J1FPIAcREeqCBumwOxKgRg" image="_J1FPIQcREeqCBumwOxKgRg"/>
+    <mappings xmi:id="_MjYocgcREeqCBumwOxKgRg" origin="_MjYocAcREeqCBumwOxKgRg" image="_MjYocQcREeqCBumwOxKgRg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_Y5RAAAcREeqCBumwOxKgRg" name="GenHandleRealization">
+    <lhs xmi:id="_Y5S1MAcREeqCBumwOxKgRg" name="Lhs">
+      <nodes xmi:id="_bIJ5cAcREeqCBumwOxKgRg" name="gha" incoming="_bkFO4BIyEeqE9pGv-1CfMw" outgoing="_eXotMAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//GenHandle"/>
+      </nodes>
+      <nodes xmi:id="_b-TeUAcREeqCBumwOxKgRg" name="pls" outgoing="_a_eF8BIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_cnjPoAcREeqCBumwOxKgRg" name="c" incoming="_b6oGoBIyEeqE9pGv-1CfMw _eXotMAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_XUtEYBIyEeqE9pGv-1CfMw" name="ae" incoming="_a_eF8BIyEeqE9pGv-1CfMw" outgoing="_bkFO4BIyEeqE9pGv-1CfMw _b6oGoBIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_YV3mcBIyEeqE9pGv-1CfMw" value="0.0">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_a_eF8BIyEeqE9pGv-1CfMw" source="_b-TeUAcREeqCBumwOxKgRg" target="_XUtEYBIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+      <edges xmi:id="_bkFO4BIyEeqE9pGv-1CfMw" source="_XUtEYBIyEeqE9pGv-1CfMw" target="_bIJ5cAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_b6oGoBIyEeqE9pGv-1CfMw" source="_XUtEYBIyEeqE9pGv-1CfMw" target="_cnjPoAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_eXotMAcREeqCBumwOxKgRg" source="_bIJ5cAcREeqCBumwOxKgRg" target="_cnjPoAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_Y5S1MQcREeqCBumwOxKgRg" name="Rhs">
+      <nodes xmi:id="_bIJ5cQcREeqCBumwOxKgRg" name="gha" outgoing="_eXpUQAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//GenHandle"/>
+      </nodes>
+      <nodes xmi:id="_b-TeUQcREeqCBumwOxKgRg" name="pls" outgoing="_e0NUcAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_cnjPoQcREeqCBumwOxKgRg" name="c" incoming="_eXpUQAcREeqCBumwOxKgRg" outgoing="_em-wwAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_dTkoIAcREeqCBumwOxKgRg" name="h" incoming="_em-wwAcREeqCBumwOxKgRg _e0NUcAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Handle"/>
+      </nodes>
+      <edges xmi:id="_em-wwAcREeqCBumwOxKgRg" source="_cnjPoQcREeqCBumwOxKgRg" target="_dTkoIAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_e0NUcAcREeqCBumwOxKgRg" source="_b-TeUQcREeqCBumwOxKgRg" target="_dTkoIAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/parts"/>
+      </edges>
+      <edges xmi:id="_eXpUQAcREeqCBumwOxKgRg" source="_bIJ5cQcREeqCBumwOxKgRg" target="_cnjPoQcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_bIKggAcREeqCBumwOxKgRg" origin="_bIJ5cAcREeqCBumwOxKgRg" image="_bIJ5cQcREeqCBumwOxKgRg"/>
+    <mappings xmi:id="_b-TeUgcREeqCBumwOxKgRg" origin="_b-TeUAcREeqCBumwOxKgRg" image="_b-TeUQcREeqCBumwOxKgRg"/>
+    <mappings xmi:id="_cnjPogcREeqCBumwOxKgRg" origin="_cnjPoAcREeqCBumwOxKgRg" image="_cnjPoQcREeqCBumwOxKgRg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_zNT7kAcREeqCBumwOxKgRg" name="MoveRealization">
+    <lhs xmi:id="_zNVwwQcREeqCBumwOxKgRg" name="Lhs">
+      <nodes xmi:id="_0r5ZcAcREeqCBumwOxKgRg" name="c" incoming="_Jfb14BKvEeqE9pGv-1CfMw" outgoing="_4BVEMAcREeqCBumwOxKgRg _4lndAAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_1vdvQAcREeqCBumwOxKgRg" name="t" incoming="_4lndAAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_3DBo4AcREeqCBumwOxKgRg" name="p" incoming="_4BVEMAcREeqCBumwOxKgRg _I_SWMBKvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+      </nodes>
+      <nodes xmi:id="_82jCwBKuEeqE9pGv-1CfMw" name="pls" outgoing="_G4RmYBKvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="__zjmcBKuEeqE9pGv-1CfMw" name="ae" incoming="_G4RmYBKvEeqE9pGv-1CfMw" outgoing="_I_SWMBKvEeqE9pGv-1CfMw _Jfb14BKvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_jv1DsBKzEeqE9pGv-1CfMw" value="0.0">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_4BVEMAcREeqCBumwOxKgRg" source="_0r5ZcAcREeqCBumwOxKgRg" target="_3DBo4AcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_4lndAAcREeqCBumwOxKgRg" source="_0r5ZcAcREeqCBumwOxKgRg" target="_1vdvQAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor/tray"/>
+      </edges>
+      <edges xmi:id="_G4RmYBKvEeqE9pGv-1CfMw" source="_82jCwBKuEeqE9pGv-1CfMw" target="__zjmcBKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+      <edges xmi:id="_I_SWMBKvEeqE9pGv-1CfMw" source="__zjmcBKuEeqE9pGv-1CfMw" target="_3DBo4AcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+      </edges>
+      <edges xmi:id="_Jfb14BKvEeqE9pGv-1CfMw" source="__zjmcBKuEeqE9pGv-1CfMw" target="_0r5ZcAcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_zNVwwgcREeqCBumwOxKgRg" name="Rhs">
+      <nodes xmi:id="_0r5ZcQcREeqCBumwOxKgRg" name="c" outgoing="_4lndAQcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_1vdvQQcREeqCBumwOxKgRg" name="t" incoming="_4lndAQcREeqCBumwOxKgRg" outgoing="_4Sg60AcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_3DBo4QcREeqCBumwOxKgRg" name="p" incoming="_4Sg60AcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+      </nodes>
+      <nodes xmi:id="_82jCwRKuEeqE9pGv-1CfMw" name="pls">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <edges xmi:id="_4lndAQcREeqCBumwOxKgRg" source="_0r5ZcQcREeqCBumwOxKgRg" target="_1vdvQQcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor/tray"/>
+      </edges>
+      <edges xmi:id="_4Sg60AcREeqCBumwOxKgRg" source="_1vdvQQcREeqCBumwOxKgRg" target="_3DBo4QcREeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_0r5ZcgcREeqCBumwOxKgRg" origin="_0r5ZcAcREeqCBumwOxKgRg" image="_0r5ZcQcREeqCBumwOxKgRg"/>
+    <mappings xmi:id="_1vdvQgcREeqCBumwOxKgRg" origin="_1vdvQAcREeqCBumwOxKgRg" image="_1vdvQQcREeqCBumwOxKgRg"/>
+    <mappings xmi:id="_3DBo4gcREeqCBumwOxKgRg" origin="_3DBo4AcREeqCBumwOxKgRg" image="_3DBo4QcREeqCBumwOxKgRg"/>
+    <mappings xmi:id="_82jCwhKuEeqE9pGv-1CfMw" origin="_82jCwBKuEeqE9pGv-1CfMw" image="_82jCwRKuEeqE9pGv-1CfMw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_MJXwgAcSEeqCBumwOxKgRg" name="PolishRealization">
+    <lhs xmi:id="_MJYXkAcSEeqCBumwOxKgRg" name="Lhs">
+      <nodes xmi:id="_OVb_cAcSEeqCBumwOxKgRg" name="t" incoming="_VNhRkAcSEeqCBumwOxKgRg" outgoing="_WVGksAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_PWRxYAcSEeqCBumwOxKgRg" name="p" incoming="_45HR8BKwEeqE9pGv-1CfMw" outgoing="_VNhRkAcSEeqCBumwOxKgRg _VffyYAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Polisher"/>
+      </nodes>
+      <nodes xmi:id="_QuuLAAcSEeqCBumwOxKgRg" name="c" incoming="_VffyYAcSEeqCBumwOxKgRg _6GtGcBKwEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_SkmHgAcSEeqCBumwOxKgRg" name="h" incoming="_WVGksAcSEeqCBumwOxKgRg _6rlVIBKwEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+      </nodes>
+      <nodes xmi:id="_3VXAMBKwEeqE9pGv-1CfMw" name="ae" incoming="_D6mpcBKxEeqE9pGv-1CfMw" outgoing="_45HR8BKwEeqE9pGv-1CfMw _6GtGcBKwEeqE9pGv-1CfMw _6rlVIBKwEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_lnCc8BKzEeqE9pGv-1CfMw" value="0.0">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="__oIusBKwEeqE9pGv-1CfMw" name="pls" outgoing="_D6mpcBKxEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <edges xmi:id="_VNhRkAcSEeqCBumwOxKgRg" source="_PWRxYAcSEeqCBumwOxKgRg" target="_OVb_cAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+      </edges>
+      <edges xmi:id="_VffyYAcSEeqCBumwOxKgRg" source="_PWRxYAcSEeqCBumwOxKgRg" target="_QuuLAAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+      <edges xmi:id="_WVGksAcSEeqCBumwOxKgRg" source="_OVb_cAcSEeqCBumwOxKgRg" target="_SkmHgAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_45HR8BKwEeqE9pGv-1CfMw" source="_3VXAMBKwEeqE9pGv-1CfMw" target="_PWRxYAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_6GtGcBKwEeqE9pGv-1CfMw" source="_3VXAMBKwEeqE9pGv-1CfMw" target="_QuuLAAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_6rlVIBKwEeqE9pGv-1CfMw" source="_3VXAMBKwEeqE9pGv-1CfMw" target="_SkmHgAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+      </edges>
+      <edges xmi:id="_D6mpcBKxEeqE9pGv-1CfMw" source="__oIusBKwEeqE9pGv-1CfMw" target="_3VXAMBKwEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_MJYXkQcSEeqCBumwOxKgRg" name="Rhs">
+      <nodes xmi:id="_OVb_cQcSEeqCBumwOxKgRg" name="t" incoming="_VNhRkQcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_PWRxYQcSEeqCBumwOxKgRg" name="p" outgoing="_VNhRkQcSEeqCBumwOxKgRg _VffyYQcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Polisher"/>
+      </nodes>
+      <nodes xmi:id="_QuuLAQcSEeqCBumwOxKgRg" name="c" incoming="_VffyYQcSEeqCBumwOxKgRg" outgoing="_V6tuwAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_SkmHgQcSEeqCBumwOxKgRg" name="h" incoming="_V6tuwAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+      </nodes>
+      <nodes xmi:id="__oIusRKwEeqE9pGv-1CfMw" name="pls">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <edges xmi:id="_VNhRkQcSEeqCBumwOxKgRg" source="_PWRxYQcSEeqCBumwOxKgRg" target="_OVb_cQcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+      </edges>
+      <edges xmi:id="_VffyYQcSEeqCBumwOxKgRg" source="_PWRxYQcSEeqCBumwOxKgRg" target="_QuuLAQcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+      <edges xmi:id="_V6tuwAcSEeqCBumwOxKgRg" source="_QuuLAQcSEeqCBumwOxKgRg" target="_SkmHgQcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_OVb_cgcSEeqCBumwOxKgRg" origin="_OVb_cAcSEeqCBumwOxKgRg" image="_OVb_cQcSEeqCBumwOxKgRg"/>
+    <mappings xmi:id="_PWRxYgcSEeqCBumwOxKgRg" origin="_PWRxYAcSEeqCBumwOxKgRg" image="_PWRxYQcSEeqCBumwOxKgRg"/>
+    <mappings xmi:id="_QuuLAgcSEeqCBumwOxKgRg" origin="_QuuLAAcSEeqCBumwOxKgRg" image="_QuuLAQcSEeqCBumwOxKgRg"/>
+    <mappings xmi:id="_SkmHggcSEeqCBumwOxKgRg" origin="_SkmHgAcSEeqCBumwOxKgRg" image="_SkmHgQcSEeqCBumwOxKgRg"/>
+    <mappings xmi:id="__oIushKwEeqE9pGv-1CfMw" origin="__oIusBKwEeqE9pGv-1CfMw" image="__oIusRKwEeqE9pGv-1CfMw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_c8r8sAcSEeqCBumwOxKgRg" name="AssembleRealization">
+    <lhs xmi:id="_c8uY8AcSEeqCBumwOxKgRg" name="Lhs">
+      <nodes xmi:id="_fLLNgAcSEeqCBumwOxKgRg" name="t" incoming="_xGkcEAcSEeqCBumwOxKgRg" outgoing="_yL66kAcSEeqCBumwOxKgRg _ydwRcAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_gdnFwAcSEeqCBumwOxKgRg" name="a" incoming="_HYoQsBLLEeqE9pGv-1CfMw" outgoing="_xGkcEAcSEeqCBumwOxKgRg _xTv8cAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Assembler"/>
+      </nodes>
+      <nodes xmi:id="_hnjJUAcSEeqCBumwOxKgRg" name="c" incoming="_xTv8cAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_jN-UkAcSEeqCBumwOxKgRg" name="he" incoming="_yL66kAcSEeqCBumwOxKgRg _G7mWcBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Head"/>
+      </nodes>
+      <nodes xmi:id="_krpzgAcSEeqCBumwOxKgRg" name="ha" incoming="_ydwRcAcSEeqCBumwOxKgRg _GbqSIBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Handle"/>
+      </nodes>
+      <nodes xmi:id="_sVU6oAcSEeqCBumwOxKgRg" name="pls" outgoing="_xoWl0BLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_yq95YBLLEeqE9pGv-1CfMw" name="ae" incoming="_xoWl0BLLEeqE9pGv-1CfMw" outgoing="_G7mWcBLLEeqE9pGv-1CfMw _GbqSIBLLEeqE9pGv-1CfMw _HYoQsBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_3q9c8BLVEeqE9pGv-1CfMw" value="0.0">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_xGkcEAcSEeqCBumwOxKgRg" source="_gdnFwAcSEeqCBumwOxKgRg" target="_fLLNgAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+      </edges>
+      <edges xmi:id="_xTv8cAcSEeqCBumwOxKgRg" source="_gdnFwAcSEeqCBumwOxKgRg" target="_hnjJUAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+      <edges xmi:id="_yL66kAcSEeqCBumwOxKgRg" source="_fLLNgAcSEeqCBumwOxKgRg" target="_jN-UkAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_ydwRcAcSEeqCBumwOxKgRg" source="_fLLNgAcSEeqCBumwOxKgRg" target="_krpzgAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_xoWl0BLLEeqE9pGv-1CfMw" source="_sVU6oAcSEeqCBumwOxKgRg" target="_yq95YBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+      <edges xmi:id="_G7mWcBLLEeqE9pGv-1CfMw" source="_yq95YBLLEeqE9pGv-1CfMw" target="_jN-UkAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+      </edges>
+      <edges xmi:id="_GbqSIBLLEeqE9pGv-1CfMw" source="_yq95YBLLEeqE9pGv-1CfMw" target="_krpzgAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+      </edges>
+      <edges xmi:id="_HYoQsBLLEeqE9pGv-1CfMw" source="_yq95YBLLEeqE9pGv-1CfMw" target="_gdnFwAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_c8uY8QcSEeqCBumwOxKgRg" name="Rhs">
+      <nodes xmi:id="_fLLNgQcSEeqCBumwOxKgRg" name="t" incoming="_xGlDIAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_gdnFwQcSEeqCBumwOxKgRg" name="a" outgoing="_xGlDIAcSEeqCBumwOxKgRg _xTv8cQcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Assembler"/>
+      </nodes>
+      <nodes xmi:id="_hnjJUQcSEeqCBumwOxKgRg" name="c" incoming="_xTv8cQcSEeqCBumwOxKgRg" outgoing="_xyH6gAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_jN-UkQcSEeqCBumwOxKgRg" name="he" incoming="_qi1v4Ac_Eeq1jfpyX4fGNA">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Head"/>
+      </nodes>
+      <nodes xmi:id="_krpzgQcSEeqCBumwOxKgRg" name="ha" incoming="_qREqcAc_Eeq1jfpyX4fGNA">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Handle"/>
+      </nodes>
+      <nodes xmi:id="_o_3asAcSEeqCBumwOxKgRg" name="h" incoming="_wEDPIAcSEeqCBumwOxKgRg _xyH6gAcSEeqCBumwOxKgRg" outgoing="_qREqcAc_Eeq1jfpyX4fGNA _qi1v4Ac_Eeq1jfpyX4fGNA">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Hammer"/>
+      </nodes>
+      <nodes xmi:id="_sVU6oQcSEeqCBumwOxKgRg" name="pls" outgoing="_wEDPIAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <edges xmi:id="_wEDPIAcSEeqCBumwOxKgRg" source="_sVU6oQcSEeqCBumwOxKgRg" target="_o_3asAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/parts"/>
+      </edges>
+      <edges xmi:id="_xGlDIAcSEeqCBumwOxKgRg" source="_gdnFwQcSEeqCBumwOxKgRg" target="_fLLNgQcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+      </edges>
+      <edges xmi:id="_xTv8cQcSEeqCBumwOxKgRg" source="_gdnFwQcSEeqCBumwOxKgRg" target="_hnjJUQcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+      <edges xmi:id="_xyH6gAcSEeqCBumwOxKgRg" source="_hnjJUQcSEeqCBumwOxKgRg" target="_o_3asAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_qREqcAc_Eeq1jfpyX4fGNA" source="_o_3asAcSEeqCBumwOxKgRg" target="_krpzgQcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Hammer/handle"/>
+      </edges>
+      <edges xmi:id="_qi1v4Ac_Eeq1jfpyX4fGNA" source="_o_3asAcSEeqCBumwOxKgRg" target="_jN-UkQcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Hammer/head"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_fLLNggcSEeqCBumwOxKgRg" origin="_fLLNgAcSEeqCBumwOxKgRg" image="_fLLNgQcSEeqCBumwOxKgRg"/>
+    <mappings xmi:id="_gdnFwgcSEeqCBumwOxKgRg" origin="_gdnFwAcSEeqCBumwOxKgRg" image="_gdnFwQcSEeqCBumwOxKgRg"/>
+    <mappings xmi:id="_hnjJUgcSEeqCBumwOxKgRg" origin="_hnjJUAcSEeqCBumwOxKgRg" image="_hnjJUQcSEeqCBumwOxKgRg"/>
+    <mappings xmi:id="_jN-UkgcSEeqCBumwOxKgRg" origin="_jN-UkAcSEeqCBumwOxKgRg" image="_jN-UkQcSEeqCBumwOxKgRg"/>
+    <mappings xmi:id="_krpzggcSEeqCBumwOxKgRg" origin="_krpzgAcSEeqCBumwOxKgRg" image="_krpzgQcSEeqCBumwOxKgRg"/>
+    <mappings xmi:id="_sVU6ogcSEeqCBumwOxKgRg" origin="_sVU6oAcSEeqCBumwOxKgRg" image="_sVU6oQcSEeqCBumwOxKgRg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_0voNcAcSEeqCBumwOxKgRg" name="PackRealization">
+    <parameters xmi:id="_ZbJb4BX1EeqsLdo6KL0Cqw" name="n" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_0vqpsAcSEeqCBumwOxKgRg" name="Lhs">
+      <nodes xmi:id="_29tOkAcSEeqCBumwOxKgRg" name="t" incoming="_ARZngAcTEeqCBumwOxKgRg" outgoing="_ClLA8AcTEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_5WsfMAcSEeqCBumwOxKgRg" name="o" incoming="_yOlxUBLJEeqE9pGv-1CfMw" outgoing="_ARZngAcTEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator"/>
+        <attributes xmi:id="_UFYREBX1EeqsLdo6KL0Cqw" value="n">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator/counter"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_6gnUoAcSEeqCBumwOxKgRg" name="pls" outgoing="_ApFHsAcTEeqCBumwOxKgRg _A-wcwAcTEeqCBumwOxKgRg _BNYHkAcTEeqCBumwOxKgRg _1sv6QBLJEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_72BoYAcSEeqCBumwOxKgRg" name="h" incoming="_ApFHsAcTEeqCBumwOxKgRg _ClLA8AcTEeqCBumwOxKgRg _0g39ABLJEeqE9pGv-1CfMw" outgoing="_BksbYAcTEeqCBumwOxKgRg _CDhscAcTEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Hammer"/>
+      </nodes>
+      <nodes xmi:id="_9a-0AAcSEeqCBumwOxKgRg" name="he" incoming="_A-wcwAcTEeqCBumwOxKgRg _BksbYAcTEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Head"/>
+      </nodes>
+      <nodes xmi:id="_-F5ZQAcSEeqCBumwOxKgRg" name="ha" incoming="_BNYHkAcTEeqCBumwOxKgRg _CDhscAcTEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Handle"/>
+      </nodes>
+      <nodes xmi:id="_kyh00BLJEeqE9pGv-1CfMw" name="ae" incoming="_1sv6QBLJEeqE9pGv-1CfMw" outgoing="_yOlxUBLJEeqE9pGv-1CfMw _0g39ABLJEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_ZiHkoBLWEeqE9pGv-1CfMw" value="0.0">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_ARZngAcTEeqCBumwOxKgRg" source="_5WsfMAcSEeqCBumwOxKgRg" target="_29tOkAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator/tray"/>
+      </edges>
+      <edges xmi:id="_ApFHsAcTEeqCBumwOxKgRg" source="_6gnUoAcSEeqCBumwOxKgRg" target="_72BoYAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/parts"/>
+      </edges>
+      <edges xmi:id="_A-wcwAcTEeqCBumwOxKgRg" source="_6gnUoAcSEeqCBumwOxKgRg" target="_9a-0AAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/parts"/>
+      </edges>
+      <edges xmi:id="_BNYHkAcTEeqCBumwOxKgRg" source="_6gnUoAcSEeqCBumwOxKgRg" target="_-F5ZQAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/parts"/>
+      </edges>
+      <edges xmi:id="_BksbYAcTEeqCBumwOxKgRg" source="_72BoYAcSEeqCBumwOxKgRg" target="_9a-0AAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Hammer/head"/>
+      </edges>
+      <edges xmi:id="_CDhscAcTEeqCBumwOxKgRg" source="_72BoYAcSEeqCBumwOxKgRg" target="_-F5ZQAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Hammer/handle"/>
+      </edges>
+      <edges xmi:id="_ClLA8AcTEeqCBumwOxKgRg" source="_29tOkAcSEeqCBumwOxKgRg" target="_72BoYAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_yOlxUBLJEeqE9pGv-1CfMw" source="_kyh00BLJEeqE9pGv-1CfMw" target="_5WsfMAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_0g39ABLJEeqE9pGv-1CfMw" source="_kyh00BLJEeqE9pGv-1CfMw" target="_72BoYAcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+      </edges>
+      <edges xmi:id="_1sv6QBLJEeqE9pGv-1CfMw" source="_6gnUoAcSEeqCBumwOxKgRg" target="_kyh00BLJEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_0vqpsQcSEeqCBumwOxKgRg" name="Rhs">
+      <nodes xmi:id="_29tOkQcSEeqCBumwOxKgRg" name="t" incoming="_ARZngQcTEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_5WsfMQcSEeqCBumwOxKgRg" name="o" outgoing="_ARZngQcTEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator"/>
+        <attributes xmi:id="_UFZfMBX1EeqsLdo6KL0Cqw" value="n+1">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator/counter"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_6gnUoQcSEeqCBumwOxKgRg" name="pls">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <edges xmi:id="_ARZngQcTEeqCBumwOxKgRg" source="_5WsfMQcSEeqCBumwOxKgRg" target="_29tOkQcSEeqCBumwOxKgRg">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator/tray"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_29tOkgcSEeqCBumwOxKgRg" origin="_29tOkAcSEeqCBumwOxKgRg" image="_29tOkQcSEeqCBumwOxKgRg"/>
+    <mappings xmi:id="_5WsfMgcSEeqCBumwOxKgRg" origin="_5WsfMAcSEeqCBumwOxKgRg" image="_5WsfMQcSEeqCBumwOxKgRg"/>
+    <mappings xmi:id="_6gnUogcSEeqCBumwOxKgRg" origin="_6gnUoAcSEeqCBumwOxKgRg" image="_6gnUoQcSEeqCBumwOxKgRg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_bdoI8BIvEeqE9pGv-1CfMw" name="GenHeadInitialization">
+    <lhs xmi:id="_bdrMQBIvEeqE9pGv-1CfMw" name="Lhs">
+      <nodes xmi:id="_gI8okBIvEeqE9pGv-1CfMw" name="ghe" outgoing="_vmmCUBIvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//GenHead"/>
+      </nodes>
+      <nodes xmi:id="_iII5IBIvEeqE9pGv-1CfMw" name="c" incoming="_vmmCUBIvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_o7rpgBIvEeqE9pGv-1CfMw" name="pls">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <edges xmi:id="_vmmCUBIvEeqE9pGv-1CfMw" source="_gI8okBIvEeqE9pGv-1CfMw" target="_iII5IBIvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_L8nYABXmEeqhP-BfRHIBNA">
+        <left xsi:type="henshin:Not" xmi:id="_KMFOgRXmEeqhP-BfRHIBNA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_KMFOghXmEeqhP-BfRHIBNA">
+            <conclusion xmi:id="_KMFOgxXmEeqhP-BfRHIBNA" name="1">
+              <nodes xmi:id="_KMF1kBXmEeqhP-BfRHIBNA" name="ghe" incoming="_s-TfgBIxEeqE9pGv-1CfMw" outgoing="_KMGcoxXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//GenHead"/>
+              </nodes>
+              <nodes xmi:id="_qYrhEBIxEeqE9pGv-1CfMw" name="ae1" outgoing="_s-TfgBIxEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+              </nodes>
+              <nodes xmi:id="_KMGcoRXmEeqhP-BfRHIBNA" name="c" incoming="_KMGcoxXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+              </nodes>
+              <nodes xmi:id="_KMGcpBXmEeqhP-BfRHIBNA" name="pls">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+              </nodes>
+              <edges xmi:id="_KMGcoxXmEeqhP-BfRHIBNA" source="_KMF1kBXmEeqhP-BfRHIBNA" target="_KMGcoRXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+              </edges>
+              <edges xmi:id="_s-TfgBIxEeqE9pGv-1CfMw" source="_qYrhEBIxEeqE9pGv-1CfMw" target="_KMF1kBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_KMF1kRXmEeqhP-BfRHIBNA" origin="_gI8okBIvEeqE9pGv-1CfMw" image="_KMF1kBXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_KMGcohXmEeqhP-BfRHIBNA" origin="_iII5IBIvEeqE9pGv-1CfMw" image="_KMGcoRXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_KMGcpRXmEeqhP-BfRHIBNA" origin="_o7rpgBIvEeqE9pGv-1CfMw" image="_KMGcpBXmEeqhP-BfRHIBNA"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_L8nYARXmEeqhP-BfRHIBNA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_L8nYAhXmEeqhP-BfRHIBNA">
+            <conclusion xmi:id="_L8nYAxXmEeqhP-BfRHIBNA" name="2">
+              <nodes xmi:id="_L8n_EBXmEeqhP-BfRHIBNA" name="ghe" outgoing="_L8n_FBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//GenHead"/>
+              </nodes>
+              <nodes xmi:id="_L8n_EhXmEeqhP-BfRHIBNA" name="c" incoming="_L8n_FBXmEeqhP-BfRHIBNA _tVf3gBIxEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+              </nodes>
+              <nodes xmi:id="_r8k8wBIxEeqE9pGv-1CfMw" name="ae2" outgoing="_tVf3gBIxEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+              </nodes>
+              <nodes xmi:id="_L8n_GBXmEeqhP-BfRHIBNA" name="pls">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+              </nodes>
+              <edges xmi:id="_L8n_FBXmEeqhP-BfRHIBNA" source="_L8n_EBXmEeqhP-BfRHIBNA" target="_L8n_EhXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+              </edges>
+              <edges xmi:id="_tVf3gBIxEeqE9pGv-1CfMw" source="_r8k8wBIxEeqE9pGv-1CfMw" target="_L8n_EhXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_L8n_ERXmEeqhP-BfRHIBNA" origin="_gI8okBIvEeqE9pGv-1CfMw" image="_L8n_EBXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_L8n_ExXmEeqhP-BfRHIBNA" origin="_iII5IBIvEeqE9pGv-1CfMw" image="_L8n_EhXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_L8n_GRXmEeqhP-BfRHIBNA" origin="_o7rpgBIvEeqE9pGv-1CfMw" image="_L8n_GBXmEeqhP-BfRHIBNA"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_bdrMQRIvEeqE9pGv-1CfMw" name="Rhs">
+      <nodes xmi:id="_gI8okRIvEeqE9pGv-1CfMw" name="ghe" incoming="_x6Fu8BIvEeqE9pGv-1CfMw" outgoing="_vmmCURIvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//GenHead"/>
+      </nodes>
+      <nodes xmi:id="_iII5IRIvEeqE9pGv-1CfMw" name="c" incoming="_vmmCURIvEeqE9pGv-1CfMw _xe9SIBIvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_o7rpgRIvEeqE9pGv-1CfMw" name="pls" outgoing="_wWQksBIvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_sNTLQBIvEeqE9pGv-1CfMw" name="ae" incoming="_wWQksBIvEeqE9pGv-1CfMw" outgoing="_xe9SIBIvEeqE9pGv-1CfMw _x6Fu8BIvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_UFxfsBIxEeqE9pGv-1CfMw" value="2">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_vmmCURIvEeqE9pGv-1CfMw" source="_gI8okRIvEeqE9pGv-1CfMw" target="_iII5IRIvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+      <edges xmi:id="_wWQksBIvEeqE9pGv-1CfMw" source="_o7rpgRIvEeqE9pGv-1CfMw" target="_sNTLQBIvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+      <edges xmi:id="_xe9SIBIvEeqE9pGv-1CfMw" source="_sNTLQBIvEeqE9pGv-1CfMw" target="_iII5IRIvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_x6Fu8BIvEeqE9pGv-1CfMw" source="_sNTLQBIvEeqE9pGv-1CfMw" target="_gI8okRIvEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_gI9PoBIvEeqE9pGv-1CfMw" origin="_gI8okBIvEeqE9pGv-1CfMw" image="_gI8okRIvEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_iII5IhIvEeqE9pGv-1CfMw" origin="_iII5IBIvEeqE9pGv-1CfMw" image="_iII5IRIvEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_o7rpghIvEeqE9pGv-1CfMw" origin="_o7rpgBIvEeqE9pGv-1CfMw" image="_o7rpgRIvEeqE9pGv-1CfMw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_mc2vQBIyEeqE9pGv-1CfMw" name="GenHandleInitialization">
+    <lhs xmi:id="_mc39YBIyEeqE9pGv-1CfMw" name="Lhs">
+      <nodes xmi:id="_zN-4YBIyEeqE9pGv-1CfMw" name="gha" outgoing="_91PK8BIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//GenHandle"/>
+      </nodes>
+      <nodes xmi:id="_0r2kkBIyEeqE9pGv-1CfMw" name="c" incoming="_91PK8BIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_17b9IBIyEeqE9pGv-1CfMw" name="pls">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <edges xmi:id="_91PK8BIyEeqE9pGv-1CfMw" source="_zN-4YBIyEeqE9pGv-1CfMw" target="_0r2kkBIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_p3hFgBXmEeqhP-BfRHIBNA">
+        <left xsi:type="henshin:Not" xmi:id="_oFV9QRXmEeqhP-BfRHIBNA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_oFV9QhXmEeqhP-BfRHIBNA">
+            <conclusion xmi:id="_oFV9QxXmEeqhP-BfRHIBNA" name="1">
+              <nodes xmi:id="_oFV9RBXmEeqhP-BfRHIBNA" name="gha" incoming="_7vmpQBI0EeqE9pGv-1CfMw" outgoing="_oFWkVBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//GenHandle"/>
+              </nodes>
+              <nodes xmi:id="_6yIUYBI0EeqE9pGv-1CfMw" name="ae1" outgoing="_7vmpQBI0EeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+              </nodes>
+              <nodes xmi:id="_oFWkUhXmEeqhP-BfRHIBNA" name="c" incoming="_oFWkVBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+              </nodes>
+              <nodes xmi:id="_oFWkVRXmEeqhP-BfRHIBNA" name="pls">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+              </nodes>
+              <edges xmi:id="_oFWkVBXmEeqhP-BfRHIBNA" source="_oFV9RBXmEeqhP-BfRHIBNA" target="_oFWkUhXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+              </edges>
+              <edges xmi:id="_7vmpQBI0EeqE9pGv-1CfMw" source="_6yIUYBI0EeqE9pGv-1CfMw" target="_oFV9RBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_oFV9RRXmEeqhP-BfRHIBNA" origin="_zN-4YBIyEeqE9pGv-1CfMw" image="_oFV9RBXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_oFWkUxXmEeqhP-BfRHIBNA" origin="_0r2kkBIyEeqE9pGv-1CfMw" image="_oFWkUhXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_oFWkVhXmEeqhP-BfRHIBNA" origin="_17b9IBIyEeqE9pGv-1CfMw" image="_oFWkVRXmEeqhP-BfRHIBNA"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_p3hFgRXmEeqhP-BfRHIBNA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_p3hFghXmEeqhP-BfRHIBNA">
+            <conclusion xmi:id="_p3hFgxXmEeqhP-BfRHIBNA" name="2">
+              <nodes xmi:id="_p3hFhBXmEeqhP-BfRHIBNA" name="gha" outgoing="_p3hFiBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//GenHandle"/>
+              </nodes>
+              <nodes xmi:id="_p3hFhhXmEeqhP-BfRHIBNA" name="c" incoming="_p3hFiBXmEeqhP-BfRHIBNA _-HaOIBI0EeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+              </nodes>
+              <nodes xmi:id="_9KONIBI0EeqE9pGv-1CfMw" name="ae2" outgoing="_-HaOIBI0EeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+              </nodes>
+              <nodes xmi:id="_p3hFjBXmEeqhP-BfRHIBNA" name="pls">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+              </nodes>
+              <edges xmi:id="_p3hFiBXmEeqhP-BfRHIBNA" source="_p3hFhBXmEeqhP-BfRHIBNA" target="_p3hFhhXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+              </edges>
+              <edges xmi:id="_-HaOIBI0EeqE9pGv-1CfMw" source="_9KONIBI0EeqE9pGv-1CfMw" target="_p3hFhhXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_p3hFhRXmEeqhP-BfRHIBNA" origin="_zN-4YBIyEeqE9pGv-1CfMw" image="_p3hFhBXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_p3hFhxXmEeqhP-BfRHIBNA" origin="_0r2kkBIyEeqE9pGv-1CfMw" image="_p3hFhhXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_p3hskBXmEeqhP-BfRHIBNA" origin="_17b9IBIyEeqE9pGv-1CfMw" image="_p3hFjBXmEeqhP-BfRHIBNA"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_mc39YRIyEeqE9pGv-1CfMw" name="Rhs">
+      <nodes xmi:id="_zN_fcBIyEeqE9pGv-1CfMw" name="gha" incoming="_9guTgBIyEeqE9pGv-1CfMw" outgoing="_91PyABIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//GenHandle"/>
+      </nodes>
+      <nodes xmi:id="_0r2kkRIyEeqE9pGv-1CfMw" name="c" incoming="_9E2P0BIyEeqE9pGv-1CfMw _91PyABIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_17b9IRIyEeqE9pGv-1CfMw" name="pls" outgoing="_8QASgBIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_3iT0UBIyEeqE9pGv-1CfMw" name="ae" incoming="_8QASgBIyEeqE9pGv-1CfMw" outgoing="_9E2P0BIyEeqE9pGv-1CfMw _9guTgBIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_CPNxABI1EeqE9pGv-1CfMw" value="3">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_8QASgBIyEeqE9pGv-1CfMw" source="_17b9IRIyEeqE9pGv-1CfMw" target="_3iT0UBIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+      <edges xmi:id="_9E2P0BIyEeqE9pGv-1CfMw" source="_3iT0UBIyEeqE9pGv-1CfMw" target="_0r2kkRIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_9guTgBIyEeqE9pGv-1CfMw" source="_3iT0UBIyEeqE9pGv-1CfMw" target="_zN_fcBIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_91PyABIyEeqE9pGv-1CfMw" source="_zN_fcBIyEeqE9pGv-1CfMw" target="_0r2kkRIyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_zN_fcRIyEeqE9pGv-1CfMw" origin="_zN-4YBIyEeqE9pGv-1CfMw" image="_zN_fcBIyEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_0r2kkhIyEeqE9pGv-1CfMw" origin="_0r2kkBIyEeqE9pGv-1CfMw" image="_0r2kkRIyEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_17b9IhIyEeqE9pGv-1CfMw" origin="_17b9IBIyEeqE9pGv-1CfMw" image="_17b9IRIyEeqE9pGv-1CfMw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_wWcNoBKtEeqE9pGv-1CfMw" name="MoveInitialization" injectiveMatching="false">
+    <lhs xmi:id="_wWhGIBKtEeqE9pGv-1CfMw" name="Lhs">
+      <nodes xmi:id="_1synQBKtEeqE9pGv-1CfMw" name="c" outgoing="_QaTLsBKuEeqE9pGv-1CfMw _RP8aQBKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_4PYf0BKtEeqE9pGv-1CfMw" name="t" incoming="_QaTLsBKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_Hy3b0BKuEeqE9pGv-1CfMw" name="p" incoming="_RP8aQBKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+      </nodes>
+      <nodes xmi:id="_cUJukBKuEeqE9pGv-1CfMw" name="pls">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <edges xmi:id="_QaTLsBKuEeqE9pGv-1CfMw" source="_1synQBKtEeqE9pGv-1CfMw" target="_4PYf0BKtEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor/tray"/>
+      </edges>
+      <edges xmi:id="_RP8aQBKuEeqE9pGv-1CfMw" source="_1synQBKtEeqE9pGv-1CfMw" target="_Hy3b0BKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_s89McBXmEeqhP-BfRHIBNA">
+        <left xsi:type="henshin:Not" xmi:id="_r1sCYRXmEeqhP-BfRHIBNA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_r1sCYhXmEeqhP-BfRHIBNA">
+            <conclusion xmi:id="_r1sCYxXmEeqhP-BfRHIBNA" name="1">
+              <nodes xmi:id="_r1sCZBXmEeqhP-BfRHIBNA" name="c" incoming="_E7bpwBKwEeqE9pGv-1CfMw" outgoing="_r1spchXmEeqhP-BfRHIBNA _r1spdRXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+              </nodes>
+              <nodes xmi:id="_ALkBUBKwEeqE9pGv-1CfMw" name="ae1" outgoing="_E7bpwBKwEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+              </nodes>
+              <nodes xmi:id="_r1spcBXmEeqhP-BfRHIBNA" name="t" incoming="_r1spchXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+              </nodes>
+              <nodes xmi:id="_r1spcxXmEeqhP-BfRHIBNA" name="p" incoming="_r1spdRXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+              </nodes>
+              <nodes xmi:id="_r1spdhXmEeqhP-BfRHIBNA" name="pls">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+              </nodes>
+              <edges xmi:id="_r1spchXmEeqhP-BfRHIBNA" source="_r1sCZBXmEeqhP-BfRHIBNA" target="_r1spcBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor/tray"/>
+              </edges>
+              <edges xmi:id="_r1spdRXmEeqhP-BfRHIBNA" source="_r1sCZBXmEeqhP-BfRHIBNA" target="_r1spcxXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+              </edges>
+              <edges xmi:id="_E7bpwBKwEeqE9pGv-1CfMw" source="_ALkBUBKwEeqE9pGv-1CfMw" target="_r1sCZBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_r1sCZRXmEeqhP-BfRHIBNA" origin="_1synQBKtEeqE9pGv-1CfMw" image="_r1sCZBXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_r1spcRXmEeqhP-BfRHIBNA" origin="_4PYf0BKtEeqE9pGv-1CfMw" image="_r1spcBXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_r1spdBXmEeqhP-BfRHIBNA" origin="_Hy3b0BKuEeqE9pGv-1CfMw" image="_r1spcxXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_r1spdxXmEeqhP-BfRHIBNA" origin="_cUJukBKuEeqE9pGv-1CfMw" image="_r1spdhXmEeqhP-BfRHIBNA"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_s89McRXmEeqhP-BfRHIBNA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_s89MchXmEeqhP-BfRHIBNA">
+            <conclusion xmi:id="_s89McxXmEeqhP-BfRHIBNA" name="2">
+              <nodes xmi:id="_s89MdBXmEeqhP-BfRHIBNA" name="c" outgoing="_s89MeBXmEeqhP-BfRHIBNA _s89zgRXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+              </nodes>
+              <nodes xmi:id="_s89MdhXmEeqhP-BfRHIBNA" name="t" incoming="_s89MeBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+              </nodes>
+              <nodes xmi:id="_s89MeRXmEeqhP-BfRHIBNA" name="p" incoming="_s89zgRXmEeqhP-BfRHIBNA _F_egsBKwEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+              </nodes>
+              <nodes xmi:id="_DRXUoBKwEeqE9pGv-1CfMw" name="ae3" outgoing="_F_egsBKwEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+              </nodes>
+              <nodes xmi:id="_s89zhRXmEeqhP-BfRHIBNA" name="pls">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+              </nodes>
+              <edges xmi:id="_s89MeBXmEeqhP-BfRHIBNA" source="_s89MdBXmEeqhP-BfRHIBNA" target="_s89MdhXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor/tray"/>
+              </edges>
+              <edges xmi:id="_s89zgRXmEeqhP-BfRHIBNA" source="_s89MdBXmEeqhP-BfRHIBNA" target="_s89MeRXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+              </edges>
+              <edges xmi:id="_F_egsBKwEeqE9pGv-1CfMw" source="_DRXUoBKwEeqE9pGv-1CfMw" target="_s89MeRXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_s89MdRXmEeqhP-BfRHIBNA" origin="_1synQBKtEeqE9pGv-1CfMw" image="_s89MdBXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_s89MdxXmEeqhP-BfRHIBNA" origin="_4PYf0BKtEeqE9pGv-1CfMw" image="_s89MdhXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_s89zgBXmEeqhP-BfRHIBNA" origin="_Hy3b0BKuEeqE9pGv-1CfMw" image="_s89MeRXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_s89zhhXmEeqhP-BfRHIBNA" origin="_cUJukBKuEeqE9pGv-1CfMw" image="_s89zhRXmEeqhP-BfRHIBNA"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_wWhGIRKtEeqE9pGv-1CfMw" name="Rhs">
+      <nodes xmi:id="_1synQRKtEeqE9pGv-1CfMw" name="c" incoming="_SZPkoBKuEeqE9pGv-1CfMw" outgoing="_QaTLsRKuEeqE9pGv-1CfMw _RP8aQRKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_4PYf0RKtEeqE9pGv-1CfMw" name="t" incoming="_QaTLsRKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_Hy3b0RKuEeqE9pGv-1CfMw" name="p" incoming="_RP8aQRKuEeqE9pGv-1CfMw _R4mVsBKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+      </nodes>
+      <nodes xmi:id="_MPSj0BKuEeqE9pGv-1CfMw" name="ae" incoming="_g_NvgBKuEeqE9pGv-1CfMw" outgoing="_R4mVsBKuEeqE9pGv-1CfMw _SZPkoBKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_w81QgBKzEeqE9pGv-1CfMw" value="1">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_cUKVoBKuEeqE9pGv-1CfMw" name="pls" outgoing="_g_NvgBKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <edges xmi:id="_QaTLsRKuEeqE9pGv-1CfMw" source="_1synQRKtEeqE9pGv-1CfMw" target="_4PYf0RKtEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor/tray"/>
+      </edges>
+      <edges xmi:id="_RP8aQRKuEeqE9pGv-1CfMw" source="_1synQRKtEeqE9pGv-1CfMw" target="_Hy3b0RKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_R4mVsBKuEeqE9pGv-1CfMw" source="_MPSj0BKuEeqE9pGv-1CfMw" target="_Hy3b0RKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+      </edges>
+      <edges xmi:id="_SZPkoBKuEeqE9pGv-1CfMw" source="_MPSj0BKuEeqE9pGv-1CfMw" target="_1synQRKtEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_g_NvgBKuEeqE9pGv-1CfMw" source="_cUKVoBKuEeqE9pGv-1CfMw" target="_MPSj0BKuEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_1synQhKtEeqE9pGv-1CfMw" origin="_1synQBKtEeqE9pGv-1CfMw" image="_1synQRKtEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_4PYf0hKtEeqE9pGv-1CfMw" origin="_4PYf0BKtEeqE9pGv-1CfMw" image="_4PYf0RKtEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_Hy3b0hKuEeqE9pGv-1CfMw" origin="_Hy3b0BKuEeqE9pGv-1CfMw" image="_Hy3b0RKuEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_cUKVoRKuEeqE9pGv-1CfMw" origin="_cUJukBKuEeqE9pGv-1CfMw" image="_cUKVoBKuEeqE9pGv-1CfMw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_ZS9uIBKxEeqE9pGv-1CfMw" name="PolishInitialization" injectiveMatching="false">
+    <lhs xmi:id="_ZTItQBKxEeqE9pGv-1CfMw" name="Lhs">
+      <nodes xmi:id="_m4GHEBKxEeqE9pGv-1CfMw" name="t" incoming="_j1kUwBKyEeqE9pGv-1CfMw" outgoing="_x9n0kBKyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_o7aCoBKxEeqE9pGv-1CfMw" name="p" outgoing="_j1kUwBKyEeqE9pGv-1CfMw _kSmPABKyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Polisher"/>
+      </nodes>
+      <nodes xmi:id="_qfiH0BKxEeqE9pGv-1CfMw" name="c" incoming="_kSmPABKyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_scu0UBKxEeqE9pGv-1CfMw" name="pls">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_xhr78BKxEeqE9pGv-1CfMw" name="h" incoming="_x9n0kBKyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+      </nodes>
+      <edges xmi:id="_j1kUwBKyEeqE9pGv-1CfMw" source="_o7aCoBKxEeqE9pGv-1CfMw" target="_m4GHEBKxEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+      </edges>
+      <edges xmi:id="_kSmPABKyEeqE9pGv-1CfMw" source="_o7aCoBKxEeqE9pGv-1CfMw" target="_qfiH0BKxEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+      <edges xmi:id="_x9n0kBKyEeqE9pGv-1CfMw" source="_m4GHEBKxEeqE9pGv-1CfMw" target="_xhr78BKxEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_wcE-sBXmEeqhP-BfRHIBNA">
+        <left xsi:type="henshin:And" xmi:id="_vjUxwBXmEeqhP-BfRHIBNA">
+          <left xsi:type="henshin:Not" xmi:id="_up4oURXmEeqhP-BfRHIBNA">
+            <child xsi:type="henshin:NestedCondition" xmi:id="_up4oUhXmEeqhP-BfRHIBNA">
+              <conclusion xmi:id="_up4oUxXmEeqhP-BfRHIBNA" name="1">
+                <nodes xmi:id="_up5PYBXmEeqhP-BfRHIBNA" name="t" incoming="_up5PZBXmEeqhP-BfRHIBNA" outgoing="_up5PZxXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+                </nodes>
+                <nodes xmi:id="_up5PYhXmEeqhP-BfRHIBNA" name="p" incoming="_XBe-QBKyEeqE9pGv-1CfMw" outgoing="_up5PZBXmEeqhP-BfRHIBNA _up5PbRXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Polisher"/>
+                </nodes>
+                <nodes xmi:id="_up5PZRXmEeqhP-BfRHIBNA" name="h" incoming="_up5PZxXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+                </nodes>
+                <nodes xmi:id="_3lOLsBKxEeqE9pGv-1CfMw" name="ae1" outgoing="_XBe-QBKyEeqE9pGv-1CfMw">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+                </nodes>
+                <nodes xmi:id="_up5PaxXmEeqhP-BfRHIBNA" name="c" incoming="_up5PbRXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+                </nodes>
+                <nodes xmi:id="_up5PbhXmEeqhP-BfRHIBNA" name="pls">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+                </nodes>
+                <edges xmi:id="_up5PZBXmEeqhP-BfRHIBNA" source="_up5PYhXmEeqhP-BfRHIBNA" target="_up5PYBXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+                </edges>
+                <edges xmi:id="_up5PZxXmEeqhP-BfRHIBNA" source="_up5PYBXmEeqhP-BfRHIBNA" target="_up5PZRXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+                </edges>
+                <edges xmi:id="_up5PbRXmEeqhP-BfRHIBNA" source="_up5PYhXmEeqhP-BfRHIBNA" target="_up5PaxXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+                </edges>
+                <edges xmi:id="_XBe-QBKyEeqE9pGv-1CfMw" source="_3lOLsBKxEeqE9pGv-1CfMw" target="_up5PYhXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+                </edges>
+              </conclusion>
+              <mappings xmi:id="_up5PYRXmEeqhP-BfRHIBNA" origin="_m4GHEBKxEeqE9pGv-1CfMw" image="_up5PYBXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_up5PYxXmEeqhP-BfRHIBNA" origin="_o7aCoBKxEeqE9pGv-1CfMw" image="_up5PYhXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_up5PZhXmEeqhP-BfRHIBNA" origin="_xhr78BKxEeqE9pGv-1CfMw" image="_up5PZRXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_up5PbBXmEeqhP-BfRHIBNA" origin="_qfiH0BKxEeqE9pGv-1CfMw" image="_up5PaxXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_up5PbxXmEeqhP-BfRHIBNA" origin="_scu0UBKxEeqE9pGv-1CfMw" image="_up5PbhXmEeqhP-BfRHIBNA"/>
+            </child>
+          </left>
+          <right xsi:type="henshin:Not" xmi:id="_vjUxwRXmEeqhP-BfRHIBNA">
+            <child xsi:type="henshin:NestedCondition" xmi:id="_vjUxwhXmEeqhP-BfRHIBNA">
+              <conclusion xmi:id="_vjUxwxXmEeqhP-BfRHIBNA" name="2">
+                <nodes xmi:id="_vjUxxBXmEeqhP-BfRHIBNA" name="t" incoming="_vjUxyBXmEeqhP-BfRHIBNA" outgoing="_vjUxyxXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+                </nodes>
+                <nodes xmi:id="_vjUxxhXmEeqhP-BfRHIBNA" name="p" outgoing="_vjUxyBXmEeqhP-BfRHIBNA _vjVY0BXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Polisher"/>
+                </nodes>
+                <nodes xmi:id="_vjUxyRXmEeqhP-BfRHIBNA" name="h" incoming="_vjUxyxXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+                </nodes>
+                <nodes xmi:id="_vjUxzBXmEeqhP-BfRHIBNA" name="c" incoming="_vjVY0BXmEeqhP-BfRHIBNA _XyaE4BKyEeqE9pGv-1CfMw">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+                </nodes>
+                <nodes xmi:id="_8NU_QBKxEeqE9pGv-1CfMw" name="ae2" outgoing="_XyaE4BKyEeqE9pGv-1CfMw">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+                </nodes>
+                <nodes xmi:id="_vjVY1BXmEeqhP-BfRHIBNA" name="pls">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+                </nodes>
+                <edges xmi:id="_vjUxyBXmEeqhP-BfRHIBNA" source="_vjUxxhXmEeqhP-BfRHIBNA" target="_vjUxxBXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+                </edges>
+                <edges xmi:id="_vjUxyxXmEeqhP-BfRHIBNA" source="_vjUxxBXmEeqhP-BfRHIBNA" target="_vjUxyRXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+                </edges>
+                <edges xmi:id="_vjVY0BXmEeqhP-BfRHIBNA" source="_vjUxxhXmEeqhP-BfRHIBNA" target="_vjUxzBXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+                </edges>
+                <edges xmi:id="_XyaE4BKyEeqE9pGv-1CfMw" source="_8NU_QBKxEeqE9pGv-1CfMw" target="_vjUxzBXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+                </edges>
+              </conclusion>
+              <mappings xmi:id="_vjUxxRXmEeqhP-BfRHIBNA" origin="_m4GHEBKxEeqE9pGv-1CfMw" image="_vjUxxBXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_vjUxxxXmEeqhP-BfRHIBNA" origin="_o7aCoBKxEeqE9pGv-1CfMw" image="_vjUxxhXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_vjUxyhXmEeqhP-BfRHIBNA" origin="_xhr78BKxEeqE9pGv-1CfMw" image="_vjUxyRXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_vjUxzRXmEeqhP-BfRHIBNA" origin="_qfiH0BKxEeqE9pGv-1CfMw" image="_vjUxzBXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_vjVY1RXmEeqhP-BfRHIBNA" origin="_scu0UBKxEeqE9pGv-1CfMw" image="_vjVY1BXmEeqhP-BfRHIBNA"/>
+            </child>
+          </right>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_wcE-sRXmEeqhP-BfRHIBNA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_wcE-shXmEeqhP-BfRHIBNA">
+            <conclusion xmi:id="_wcE-sxXmEeqhP-BfRHIBNA" name="3">
+              <nodes xmi:id="_wcE-tBXmEeqhP-BfRHIBNA" name="t" incoming="_wcFlwRXmEeqhP-BfRHIBNA" outgoing="_wcFlxBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+              </nodes>
+              <nodes xmi:id="_wcE-thXmEeqhP-BfRHIBNA" name="p" outgoing="_wcFlwRXmEeqhP-BfRHIBNA _wcFlxxXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Polisher"/>
+              </nodes>
+              <nodes xmi:id="_wcFlwhXmEeqhP-BfRHIBNA" name="h" incoming="_wcFlxBXmEeqhP-BfRHIBNA _zB9mcBKyEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+              </nodes>
+              <nodes xmi:id="_wcFlxRXmEeqhP-BfRHIBNA" name="c" incoming="_wcFlxxXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+              </nodes>
+              <nodes xmi:id="_wcFlyBXmEeqhP-BfRHIBNA" name="pls">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+              </nodes>
+              <nodes xmi:id="_Le_LcBKyEeqE9pGv-1CfMw" name="ae3" outgoing="_zB9mcBKyEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+              </nodes>
+              <edges xmi:id="_wcFlwRXmEeqhP-BfRHIBNA" source="_wcE-thXmEeqhP-BfRHIBNA" target="_wcE-tBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+              </edges>
+              <edges xmi:id="_wcFlxBXmEeqhP-BfRHIBNA" source="_wcE-tBXmEeqhP-BfRHIBNA" target="_wcFlwhXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+              </edges>
+              <edges xmi:id="_wcFlxxXmEeqhP-BfRHIBNA" source="_wcE-thXmEeqhP-BfRHIBNA" target="_wcFlxRXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+              </edges>
+              <edges xmi:id="_zB9mcBKyEeqE9pGv-1CfMw" source="_Le_LcBKyEeqE9pGv-1CfMw" target="_wcFlwhXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_wcE-tRXmEeqhP-BfRHIBNA" origin="_m4GHEBKxEeqE9pGv-1CfMw" image="_wcE-tBXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_wcFlwBXmEeqhP-BfRHIBNA" origin="_o7aCoBKxEeqE9pGv-1CfMw" image="_wcE-thXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_wcFlwxXmEeqhP-BfRHIBNA" origin="_xhr78BKxEeqE9pGv-1CfMw" image="_wcFlwhXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_wcFlxhXmEeqhP-BfRHIBNA" origin="_qfiH0BKxEeqE9pGv-1CfMw" image="_wcFlxRXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_wcFlyRXmEeqhP-BfRHIBNA" origin="_scu0UBKxEeqE9pGv-1CfMw" image="_wcFlyBXmEeqhP-BfRHIBNA"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_ZTJUUBKxEeqE9pGv-1CfMw" name="Rhs">
+      <nodes xmi:id="_m4GHERKxEeqE9pGv-1CfMw" name="t" incoming="_j1kUwRKyEeqE9pGv-1CfMw" outgoing="_x9n0kRKyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_o7apsBKxEeqE9pGv-1CfMw" name="p" incoming="_0UHx4BKyEeqE9pGv-1CfMw" outgoing="_j1kUwRKyEeqE9pGv-1CfMw _kSmPARKyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Polisher"/>
+      </nodes>
+      <nodes xmi:id="_qfiH0RKxEeqE9pGv-1CfMw" name="c" incoming="_kSmPARKyEeqE9pGv-1CfMw _0ytyYBKyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
+      </nodes>
+      <nodes xmi:id="_scu0URKxEeqE9pGv-1CfMw" name="pls" outgoing="_4A3JYBKyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_xhr78RKxEeqE9pGv-1CfMw" name="h" incoming="_x9n0kRKyEeqE9pGv-1CfMw _1ZqdoBKyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Part"/>
+      </nodes>
+      <nodes xmi:id="_zRtIEBKxEeqE9pGv-1CfMw" name="ae" incoming="_4A3JYBKyEeqE9pGv-1CfMw" outgoing="_0UHx4BKyEeqE9pGv-1CfMw _0ytyYBKyEeqE9pGv-1CfMw _1ZqdoBKyEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_vNeLsBKzEeqE9pGv-1CfMw" value="2">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_j1kUwRKyEeqE9pGv-1CfMw" source="_o7apsBKxEeqE9pGv-1CfMw" target="_m4GHERKxEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+      </edges>
+      <edges xmi:id="_kSmPARKyEeqE9pGv-1CfMw" source="_o7apsBKxEeqE9pGv-1CfMw" target="_qfiH0RKxEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Machine/out"/>
+      </edges>
+      <edges xmi:id="_x9n0kRKyEeqE9pGv-1CfMw" source="_m4GHERKxEeqE9pGv-1CfMw" target="_xhr78RKxEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_0UHx4BKyEeqE9pGv-1CfMw" source="_zRtIEBKxEeqE9pGv-1CfMw" target="_o7apsBKxEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_0ytyYBKyEeqE9pGv-1CfMw" source="_zRtIEBKxEeqE9pGv-1CfMw" target="_qfiH0RKxEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_1ZqdoBKyEeqE9pGv-1CfMw" source="_zRtIEBKxEeqE9pGv-1CfMw" target="_xhr78RKxEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+      </edges>
+      <edges xmi:id="_4A3JYBKyEeqE9pGv-1CfMw" source="_scu0URKxEeqE9pGv-1CfMw" target="_zRtIEBKxEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_m4GHEhKxEeqE9pGv-1CfMw" origin="_m4GHEBKxEeqE9pGv-1CfMw" image="_m4GHERKxEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_o7apsRKxEeqE9pGv-1CfMw" origin="_o7aCoBKxEeqE9pGv-1CfMw" image="_o7apsBKxEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_qfiH0hKxEeqE9pGv-1CfMw" origin="_qfiH0BKxEeqE9pGv-1CfMw" image="_qfiH0RKxEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_scu0UhKxEeqE9pGv-1CfMw" origin="_scu0UBKxEeqE9pGv-1CfMw" image="_scu0URKxEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_xhsjABKxEeqE9pGv-1CfMw" origin="_xhr78BKxEeqE9pGv-1CfMw" image="_xhr78RKxEeqE9pGv-1CfMw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_VCNGwBK1EeqE9pGv-1CfMw" name="PackInitialization" injectiveMatching="false">
+    <lhs xmi:id="_VDJh8BK1EeqE9pGv-1CfMw" name="Lhs">
+      <nodes xmi:id="_-c3-ABLHEeqE9pGv-1CfMw" name="t" incoming="_maJIUBLIEeqE9pGv-1CfMw" outgoing="_nKuQsBLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_DnHOQBLIEeqE9pGv-1CfMw" name="h" incoming="_nKuQsBLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Hammer"/>
+      </nodes>
+      <nodes xmi:id="_I0ZygBLIEeqE9pGv-1CfMw" name="pls">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_d2PNkBLIEeqE9pGv-1CfMw" name="o" outgoing="_maJIUBLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator"/>
+      </nodes>
+      <edges xmi:id="_maJIUBLIEeqE9pGv-1CfMw" source="_d2PNkBLIEeqE9pGv-1CfMw" target="_-c3-ABLHEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator/tray"/>
+      </edges>
+      <edges xmi:id="_nKuQsBLIEeqE9pGv-1CfMw" source="_-c3-ABLHEeqE9pGv-1CfMw" target="_DnHOQBLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_zE6pMBXmEeqhP-BfRHIBNA">
+        <left xsi:type="henshin:Not" xmi:id="_yFP78RXmEeqhP-BfRHIBNA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_yFP78hXmEeqhP-BfRHIBNA">
+            <conclusion xmi:id="_yFP78xXmEeqhP-BfRHIBNA" name="1">
+              <nodes xmi:id="_yFP79BXmEeqhP-BfRHIBNA" name="t" incoming="_yFP7-BXmEeqhP-BfRHIBNA" outgoing="_yFQjARXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+              </nodes>
+              <nodes xmi:id="_yFP79hXmEeqhP-BfRHIBNA" name="o" outgoing="_yFP7-BXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator"/>
+              </nodes>
+              <nodes xmi:id="_yFP7-RXmEeqhP-BfRHIBNA" name="h" incoming="_yFQjARXmEeqhP-BfRHIBNA _ofHQwBLIEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Hammer"/>
+              </nodes>
+              <nodes xmi:id="_F9nLkBLIEeqE9pGv-1CfMw" name="ae2" outgoing="_ofHQwBLIEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+              </nodes>
+              <nodes xmi:id="_yFQjBRXmEeqhP-BfRHIBNA" name="pls">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+              </nodes>
+              <edges xmi:id="_yFP7-BXmEeqhP-BfRHIBNA" source="_yFP79hXmEeqhP-BfRHIBNA" target="_yFP79BXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator/tray"/>
+              </edges>
+              <edges xmi:id="_yFQjARXmEeqhP-BfRHIBNA" source="_yFP79BXmEeqhP-BfRHIBNA" target="_yFP7-RXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+              </edges>
+              <edges xmi:id="_ofHQwBLIEeqE9pGv-1CfMw" source="_F9nLkBLIEeqE9pGv-1CfMw" target="_yFP7-RXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_yFP79RXmEeqhP-BfRHIBNA" origin="_-c3-ABLHEeqE9pGv-1CfMw" image="_yFP79BXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_yFP79xXmEeqhP-BfRHIBNA" origin="_d2PNkBLIEeqE9pGv-1CfMw" image="_yFP79hXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_yFQjABXmEeqhP-BfRHIBNA" origin="_DnHOQBLIEeqE9pGv-1CfMw" image="_yFP7-RXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_yFQjBhXmEeqhP-BfRHIBNA" origin="_I0ZygBLIEeqE9pGv-1CfMw" image="_yFQjBRXmEeqhP-BfRHIBNA"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_zE6pMRXmEeqhP-BfRHIBNA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_zE6pMhXmEeqhP-BfRHIBNA">
+            <conclusion xmi:id="_zE6pMxXmEeqhP-BfRHIBNA" name="2">
+              <nodes xmi:id="_zE6pNBXmEeqhP-BfRHIBNA" name="t" incoming="_zE7QQxXmEeqhP-BfRHIBNA" outgoing="_zE7QRhXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+              </nodes>
+              <nodes xmi:id="_zE7QQRXmEeqhP-BfRHIBNA" name="o" incoming="_3-V-4BLIEeqE9pGv-1CfMw" outgoing="_zE7QQxXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator"/>
+              </nodes>
+              <nodes xmi:id="_zE7QRBXmEeqhP-BfRHIBNA" name="h" incoming="_zE7QRhXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Hammer"/>
+              </nodes>
+              <nodes xmi:id="_zE7QRxXmEeqhP-BfRHIBNA" name="pls">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+              </nodes>
+              <nodes xmi:id="_3VZvkBLIEeqE9pGv-1CfMw" name="ae1" outgoing="_3-V-4BLIEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+              </nodes>
+              <edges xmi:id="_zE7QQxXmEeqhP-BfRHIBNA" source="_zE7QQRXmEeqhP-BfRHIBNA" target="_zE6pNBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator/tray"/>
+              </edges>
+              <edges xmi:id="_zE7QRhXmEeqhP-BfRHIBNA" source="_zE6pNBXmEeqhP-BfRHIBNA" target="_zE7QRBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+              </edges>
+              <edges xmi:id="_3-V-4BLIEeqE9pGv-1CfMw" source="_3VZvkBLIEeqE9pGv-1CfMw" target="_zE7QQRXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_zE7QQBXmEeqhP-BfRHIBNA" origin="_-c3-ABLHEeqE9pGv-1CfMw" image="_zE6pNBXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_zE7QQhXmEeqhP-BfRHIBNA" origin="_d2PNkBLIEeqE9pGv-1CfMw" image="_zE7QQRXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_zE7QRRXmEeqhP-BfRHIBNA" origin="_DnHOQBLIEeqE9pGv-1CfMw" image="_zE7QRBXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_zE7QSBXmEeqhP-BfRHIBNA" origin="_I0ZygBLIEeqE9pGv-1CfMw" image="_zE7QRxXmEeqhP-BfRHIBNA"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_VDJh8RK1EeqE9pGv-1CfMw" name="Rhs">
+      <nodes xmi:id="_-c3-ARLHEeqE9pGv-1CfMw" name="t" incoming="_maJIURLIEeqE9pGv-1CfMw" outgoing="_nKuQsRLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_DnHOQRLIEeqE9pGv-1CfMw" name="h" incoming="_nKuQsRLIEeqE9pGv-1CfMw _ui1GsBLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Hammer"/>
+      </nodes>
+      <nodes xmi:id="_I0aZkBLIEeqE9pGv-1CfMw" name="pls" outgoing="_u_8ggBLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_d2PNkRLIEeqE9pGv-1CfMw" name="o" incoming="_t7xtwBLIEeqE9pGv-1CfMw" outgoing="_maJIURLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator"/>
+      </nodes>
+      <nodes xmi:id="_jHOmEBLIEeqE9pGv-1CfMw" name="ae" incoming="_u_8ggBLIEeqE9pGv-1CfMw" outgoing="_t7xtwBLIEeqE9pGv-1CfMw _ui1GsBLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_koSwMBLIEeqE9pGv-1CfMw" value="1">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_maJIURLIEeqE9pGv-1CfMw" source="_d2PNkRLIEeqE9pGv-1CfMw" target="_-c3-ARLHEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Operator/tray"/>
+      </edges>
+      <edges xmi:id="_nKuQsRLIEeqE9pGv-1CfMw" source="_-c3-ARLHEeqE9pGv-1CfMw" target="_DnHOQRLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_t7xtwBLIEeqE9pGv-1CfMw" source="_jHOmEBLIEeqE9pGv-1CfMw" target="_d2PNkRLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_ui1GsBLIEeqE9pGv-1CfMw" source="_jHOmEBLIEeqE9pGv-1CfMw" target="_DnHOQRLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+      </edges>
+      <edges xmi:id="_u_8ggBLIEeqE9pGv-1CfMw" source="_I0aZkBLIEeqE9pGv-1CfMw" target="_jHOmEBLIEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_-c3-AhLHEeqE9pGv-1CfMw" origin="_-c3-ABLHEeqE9pGv-1CfMw" image="_-c3-ARLHEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_DnHOQhLIEeqE9pGv-1CfMw" origin="_DnHOQBLIEeqE9pGv-1CfMw" image="_DnHOQRLIEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_I0aZkRLIEeqE9pGv-1CfMw" origin="_I0ZygBLIEeqE9pGv-1CfMw" image="_I0aZkBLIEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_d2PNkhLIEeqE9pGv-1CfMw" origin="_d2PNkBLIEeqE9pGv-1CfMw" image="_d2PNkRLIEeqE9pGv-1CfMw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_eRSf8BLKEeqE9pGv-1CfMw" name="AssembleInitialization" injectiveMatching="false">
+    <lhs xmi:id="_eRUVIBLKEeqE9pGv-1CfMw" name="Lhs">
+      <nodes xmi:id="_KQSaUBLLEeqE9pGv-1CfMw" name="t" incoming="_jgmoABLLEeqE9pGv-1CfMw" outgoing="_kZ_uIBLLEeqE9pGv-1CfMw _k9WS0BLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_LK954BLLEeqE9pGv-1CfMw" name="he" incoming="_kZ_uIBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Head"/>
+      </nodes>
+      <nodes xmi:id="_MWcOgBLLEeqE9pGv-1CfMw" name="ha" incoming="_k9WS0BLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Handle"/>
+      </nodes>
+      <nodes xmi:id="_RZG3IBLLEeqE9pGv-1CfMw" name="a" outgoing="_jgmoABLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Assembler"/>
+      </nodes>
+      <nodes xmi:id="_W4QncBLLEeqE9pGv-1CfMw" name="pls">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <edges xmi:id="_jgmoABLLEeqE9pGv-1CfMw" source="_RZG3IBLLEeqE9pGv-1CfMw" target="_KQSaUBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+      </edges>
+      <edges xmi:id="_kZ_uIBLLEeqE9pGv-1CfMw" source="_KQSaUBLLEeqE9pGv-1CfMw" target="_LK954BLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_k9WS0BLLEeqE9pGv-1CfMw" source="_KQSaUBLLEeqE9pGv-1CfMw" target="_MWcOgBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <formula xsi:type="henshin:And" xmi:id="_1148ABXmEeqhP-BfRHIBNA">
+        <left xsi:type="henshin:And" xmi:id="_08RMYBXmEeqhP-BfRHIBNA">
+          <left xsi:type="henshin:Not" xmi:id="_0EzY4RXmEeqhP-BfRHIBNA">
+            <child xsi:type="henshin:NestedCondition" xmi:id="_0EzY4hXmEeqhP-BfRHIBNA">
+              <conclusion xmi:id="_0EzY4xXmEeqhP-BfRHIBNA" name="1">
+                <nodes xmi:id="_0EzY5BXmEeqhP-BfRHIBNA" name="t" incoming="_0Ez_8hXmEeqhP-BfRHIBNA" outgoing="_0Ez_9RXmEeqhP-BfRHIBNA _0Ez_-BXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+                </nodes>
+                <nodes xmi:id="_0Ez_8BXmEeqhP-BfRHIBNA" name="a" incoming="_q2gekBLLEeqE9pGv-1CfMw" outgoing="_0Ez_8hXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Assembler"/>
+                </nodes>
+                <nodes xmi:id="_0Ez_8xXmEeqhP-BfRHIBNA" name="he" incoming="_0Ez_9RXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Head"/>
+                </nodes>
+                <nodes xmi:id="_0Ez_9hXmEeqhP-BfRHIBNA" name="ha" incoming="_0Ez_-BXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Handle"/>
+                </nodes>
+                <nodes xmi:id="_Sd7xMBLLEeqE9pGv-1CfMw" name="ae3" outgoing="_q2gekBLLEeqE9pGv-1CfMw">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+                </nodes>
+                <nodes xmi:id="_0Ez__BXmEeqhP-BfRHIBNA" name="pls">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+                </nodes>
+                <edges xmi:id="_0Ez_8hXmEeqhP-BfRHIBNA" source="_0Ez_8BXmEeqhP-BfRHIBNA" target="_0EzY5BXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+                </edges>
+                <edges xmi:id="_0Ez_9RXmEeqhP-BfRHIBNA" source="_0EzY5BXmEeqhP-BfRHIBNA" target="_0Ez_8xXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+                </edges>
+                <edges xmi:id="_0Ez_-BXmEeqhP-BfRHIBNA" source="_0EzY5BXmEeqhP-BfRHIBNA" target="_0Ez_9hXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+                </edges>
+                <edges xmi:id="_q2gekBLLEeqE9pGv-1CfMw" source="_Sd7xMBLLEeqE9pGv-1CfMw" target="_0Ez_8BXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+                </edges>
+              </conclusion>
+              <mappings xmi:id="_0EzY5RXmEeqhP-BfRHIBNA" origin="_KQSaUBLLEeqE9pGv-1CfMw" image="_0EzY5BXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_0Ez_8RXmEeqhP-BfRHIBNA" origin="_RZG3IBLLEeqE9pGv-1CfMw" image="_0Ez_8BXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_0Ez_9BXmEeqhP-BfRHIBNA" origin="_LK954BLLEeqE9pGv-1CfMw" image="_0Ez_8xXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_0Ez_9xXmEeqhP-BfRHIBNA" origin="_MWcOgBLLEeqE9pGv-1CfMw" image="_0Ez_9hXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_0Ez__RXmEeqhP-BfRHIBNA" origin="_W4QncBLLEeqE9pGv-1CfMw" image="_0Ez__BXmEeqhP-BfRHIBNA"/>
+            </child>
+          </left>
+          <right xsi:type="henshin:Not" xmi:id="_08RMYRXmEeqhP-BfRHIBNA">
+            <child xsi:type="henshin:NestedCondition" xmi:id="_08RMYhXmEeqhP-BfRHIBNA">
+              <conclusion xmi:id="_08RMYxXmEeqhP-BfRHIBNA" name="2">
+                <nodes xmi:id="_08RMZBXmEeqhP-BfRHIBNA" name="t" incoming="_08TBkBXmEeqhP-BfRHIBNA" outgoing="_08TBkxXmEeqhP-BfRHIBNA _08UPsRXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+                </nodes>
+                <nodes xmi:id="_08RzcBXmEeqhP-BfRHIBNA" name="a" outgoing="_08TBkBXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Assembler"/>
+                </nodes>
+                <nodes xmi:id="_08TBkRXmEeqhP-BfRHIBNA" name="he" incoming="_08TBkxXmEeqhP-BfRHIBNA _li6eABLLEeqE9pGv-1CfMw">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Head"/>
+                </nodes>
+                <nodes xmi:id="_08TBlBXmEeqhP-BfRHIBNA" name="ha" incoming="_08UPsRXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Handle"/>
+                </nodes>
+                <nodes xmi:id="_No1DcBLLEeqE9pGv-1CfMw" name="ae1" outgoing="_li6eABLLEeqE9pGv-1CfMw">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+                </nodes>
+                <nodes xmi:id="_08WE4BXmEeqhP-BfRHIBNA" name="pls">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+                </nodes>
+                <edges xmi:id="_08TBkBXmEeqhP-BfRHIBNA" source="_08RzcBXmEeqhP-BfRHIBNA" target="_08RMZBXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+                </edges>
+                <edges xmi:id="_08TBkxXmEeqhP-BfRHIBNA" source="_08RMZBXmEeqhP-BfRHIBNA" target="_08TBkRXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+                </edges>
+                <edges xmi:id="_08UPsRXmEeqhP-BfRHIBNA" source="_08RMZBXmEeqhP-BfRHIBNA" target="_08TBlBXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+                </edges>
+                <edges xmi:id="_li6eABLLEeqE9pGv-1CfMw" source="_No1DcBLLEeqE9pGv-1CfMw" target="_08TBkRXmEeqhP-BfRHIBNA">
+                  <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+                </edges>
+              </conclusion>
+              <mappings xmi:id="_08RMZRXmEeqhP-BfRHIBNA" origin="_KQSaUBLLEeqE9pGv-1CfMw" image="_08RMZBXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_08SagBXmEeqhP-BfRHIBNA" origin="_RZG3IBLLEeqE9pGv-1CfMw" image="_08RzcBXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_08TBkhXmEeqhP-BfRHIBNA" origin="_LK954BLLEeqE9pGv-1CfMw" image="_08TBkRXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_08UPsBXmEeqhP-BfRHIBNA" origin="_MWcOgBLLEeqE9pGv-1CfMw" image="_08TBlBXmEeqhP-BfRHIBNA"/>
+              <mappings xmi:id="_08WE4RXmEeqhP-BfRHIBNA" origin="_W4QncBLLEeqE9pGv-1CfMw" image="_08WE4BXmEeqhP-BfRHIBNA"/>
+            </child>
+          </right>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_1148ARXmEeqhP-BfRHIBNA">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_1148AhXmEeqhP-BfRHIBNA">
+            <conclusion xmi:id="_1148AxXmEeqhP-BfRHIBNA" name="3">
+              <nodes xmi:id="_1148BBXmEeqhP-BfRHIBNA" name="t" incoming="_1148CBXmEeqhP-BfRHIBNA" outgoing="_115jEBXmEeqhP-BfRHIBNA _115jExXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+              </nodes>
+              <nodes xmi:id="_1148BhXmEeqhP-BfRHIBNA" name="a" outgoing="_1148CBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Assembler"/>
+              </nodes>
+              <nodes xmi:id="_1148CRXmEeqhP-BfRHIBNA" name="he" incoming="_115jEBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Head"/>
+              </nodes>
+              <nodes xmi:id="_115jERXmEeqhP-BfRHIBNA" name="ha" incoming="_115jExXmEeqhP-BfRHIBNA _l_noIBLLEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Handle"/>
+              </nodes>
+              <nodes xmi:id="_Or-igBLLEeqE9pGv-1CfMw" name="ae2" outgoing="_l_noIBLLEeqE9pGv-1CfMw">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+              </nodes>
+              <nodes xmi:id="_115jFxXmEeqhP-BfRHIBNA" name="pls">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+              </nodes>
+              <edges xmi:id="_1148CBXmEeqhP-BfRHIBNA" source="_1148BhXmEeqhP-BfRHIBNA" target="_1148BBXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+              </edges>
+              <edges xmi:id="_115jEBXmEeqhP-BfRHIBNA" source="_1148BBXmEeqhP-BfRHIBNA" target="_1148CRXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+              </edges>
+              <edges xmi:id="_115jExXmEeqhP-BfRHIBNA" source="_1148BBXmEeqhP-BfRHIBNA" target="_115jERXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+              </edges>
+              <edges xmi:id="_l_noIBLLEeqE9pGv-1CfMw" source="_Or-igBLLEeqE9pGv-1CfMw" target="_115jERXmEeqhP-BfRHIBNA">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_1148BRXmEeqhP-BfRHIBNA" origin="_KQSaUBLLEeqE9pGv-1CfMw" image="_1148BBXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_1148BxXmEeqhP-BfRHIBNA" origin="_RZG3IBLLEeqE9pGv-1CfMw" image="_1148BhXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_1148ChXmEeqhP-BfRHIBNA" origin="_LK954BLLEeqE9pGv-1CfMw" image="_1148CRXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_115jEhXmEeqhP-BfRHIBNA" origin="_MWcOgBLLEeqE9pGv-1CfMw" image="_115jERXmEeqhP-BfRHIBNA"/>
+            <mappings xmi:id="_115jGBXmEeqhP-BfRHIBNA" origin="_W4QncBLLEeqE9pGv-1CfMw" image="_115jFxXmEeqhP-BfRHIBNA"/>
+          </child>
+        </right>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_eRUVIRLKEeqE9pGv-1CfMw" name="Rhs">
+      <nodes xmi:id="_KQSaURLLEeqE9pGv-1CfMw" name="t" incoming="_jgmoARLLEeqE9pGv-1CfMw" outgoing="_kZ_uIRLLEeqE9pGv-1CfMw _k9WS0RLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
+      </nodes>
+      <nodes xmi:id="_LK954RLLEeqE9pGv-1CfMw" name="he" incoming="_kZ_uIRLLEeqE9pGv-1CfMw _ozO_QBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Head"/>
+      </nodes>
+      <nodes xmi:id="_MWc1kBLLEeqE9pGv-1CfMw" name="ha" incoming="_k9WS0RLLEeqE9pGv-1CfMw _pIoAcBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Handle"/>
+      </nodes>
+      <nodes xmi:id="_RZG3IRLLEeqE9pGv-1CfMw" name="a" incoming="_odWO0BLLEeqE9pGv-1CfMw" outgoing="_jgmoARLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Assembler"/>
+      </nodes>
+      <nodes xmi:id="_W4QncRLLEeqE9pGv-1CfMw" name="pls" outgoing="_mn7lUBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+      </nodes>
+      <nodes xmi:id="_afpk4BLLEeqE9pGv-1CfMw" name="ae" incoming="_mn7lUBLLEeqE9pGv-1CfMw" outgoing="_odWO0BLLEeqE9pGv-1CfMw _ozO_QBLLEeqE9pGv-1CfMw _pIoAcBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_2h90kBLVEeqE9pGv-1CfMw" value="5">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_jgmoARLLEeqE9pGv-1CfMw" source="_RZG3IRLLEeqE9pGv-1CfMw" target="_KQSaURLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Transformer/in"/>
+      </edges>
+      <edges xmi:id="_kZ_uIRLLEeqE9pGv-1CfMw" source="_KQSaURLLEeqE9pGv-1CfMw" target="_LK954RLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_k9WS0RLLEeqE9pGv-1CfMw" source="_KQSaURLLEeqE9pGv-1CfMw" target="_MWc1kBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//Container/parts"/>
+      </edges>
+      <edges xmi:id="_mn7lUBLLEeqE9pGv-1CfMw" source="_W4QncRLLEeqE9pGv-1CfMw" target="_afpk4BLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+      <edges xmi:id="_odWO0BLLEeqE9pGv-1CfMw" source="_afpk4BLLEeqE9pGv-1CfMw" target="_RZG3IRLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/namedelement"/>
+      </edges>
+      <edges xmi:id="_ozO_QBLLEeqE9pGv-1CfMw" source="_afpk4BLLEeqE9pGv-1CfMw" target="_LK954RLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+      </edges>
+      <edges xmi:id="_pIoAcBLLEeqE9pGv-1CfMw" source="_afpk4BLLEeqE9pGv-1CfMw" target="_MWc1kBLLEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/parts"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_KQSaUhLLEeqE9pGv-1CfMw" origin="_KQSaUBLLEeqE9pGv-1CfMw" image="_KQSaURLLEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_LK954hLLEeqE9pGv-1CfMw" origin="_LK954BLLEeqE9pGv-1CfMw" image="_LK954RLLEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_MWc1kRLLEeqE9pGv-1CfMw" origin="_MWcOgBLLEeqE9pGv-1CfMw" image="_MWc1kBLLEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_RZG3IhLLEeqE9pGv-1CfMw" origin="_RZG3IBLLEeqE9pGv-1CfMw" image="_RZG3IRLLEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_W4QnchLLEeqE9pGv-1CfMw" origin="_W4QncBLLEeqE9pGv-1CfMw" image="_W4QncRLLEeqE9pGv-1CfMw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_XryDMBLYEeqE9pGv-1CfMw" name="Tick">
+    <parameters xmi:id="_qPRzkBLYEeqE9pGv-1CfMw" name="t" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <parameters xmi:id="_wXH7kBLYEeqE9pGv-1CfMw" name="t1" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <parameters xmi:id="_Wsk-EBLaEeqE9pGv-1CfMw" name="t2" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <parameters xmi:id="_jBxjsBLbEeqE9pGv-1CfMw" name="t3" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <lhs xmi:id="_Xr1GgBLYEeqE9pGv-1CfMw" name="Lhs">
+      <nodes xmi:id="_mn7SYBLYEeqE9pGv-1CfMw" name="ae" incoming="_rHY1YBLaEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_n3WS4BLYEeqE9pGv-1CfMw" value="t1">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_qFSfMBLaEeqE9pGv-1CfMw" name="pls" outgoing="_rHY1YBLaEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+        <attributes xmi:id="_cAVhQBLbEeqE9pGv-1CfMw" value="t">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/clock"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_rHY1YBLaEeqE9pGv-1CfMw" source="_qFSfMBLaEeqE9pGv-1CfMw" target="_mn7SYBLYEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_BqBU0RLbEeqE9pGv-1CfMw">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_BqBU0hLbEeqE9pGv-1CfMw">
+          <conclusion xmi:id="_BqBU0xLbEeqE9pGv-1CfMw">
+            <nodes xmi:id="_BqBU1BLbEeqE9pGv-1CfMw" name="ae" incoming="_BqBU2RLbEeqE9pGv-1CfMw">
+              <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+              <attributes xmi:id="_BqBU1RLbEeqE9pGv-1CfMw" value="t1">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_BqBU1xLbEeqE9pGv-1CfMw" name="pls" outgoing="_BqBU2RLbEeqE9pGv-1CfMw _Ds_SIBLbEeqE9pGv-1CfMw">
+              <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+              <attributes xmi:id="_cAVhQhLbEeqE9pGv-1CfMw" value="t">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/clock"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_BqAtwBLbEeqE9pGv-1CfMw" name="aei" incoming="_Ds_SIBLbEeqE9pGv-1CfMw">
+              <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+              <attributes xmi:id="_HtesEBLbEeqE9pGv-1CfMw" value="t3">
+                <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+              </attributes>
+            </nodes>
+            <edges xmi:id="_BqBU2RLbEeqE9pGv-1CfMw" source="_BqBU1xLbEeqE9pGv-1CfMw" target="_BqBU1BLbEeqE9pGv-1CfMw">
+              <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+            </edges>
+            <edges xmi:id="_Ds_SIBLbEeqE9pGv-1CfMw" source="_BqBU1xLbEeqE9pGv-1CfMw" target="_BqAtwBLbEeqE9pGv-1CfMw">
+              <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_BqBU1hLbEeqE9pGv-1CfMw" origin="_mn7SYBLYEeqE9pGv-1CfMw" image="_BqBU1BLbEeqE9pGv-1CfMw"/>
+          <mappings xmi:id="_BqBU2BLbEeqE9pGv-1CfMw" origin="_qFSfMBLaEeqE9pGv-1CfMw" image="_BqBU1xLbEeqE9pGv-1CfMw"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_Xr1GgRLYEeqE9pGv-1CfMw" name="Rhs">
+      <nodes xmi:id="_mn7SYRLYEeqE9pGv-1CfMw" name="ae" incoming="_rHY1YRLaEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+        <attributes xmi:id="_n3WS4RLYEeqE9pGv-1CfMw" value="0">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_qFSfMRLaEeqE9pGv-1CfMw" name="pls" outgoing="_rHY1YRLaEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+        <attributes xmi:id="_cAVhQRLbEeqE9pGv-1CfMw" value="t+t1">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/clock"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_rHY1YRLaEeqE9pGv-1CfMw" source="_qFSfMRLaEeqE9pGv-1CfMw" target="_mn7SYRLYEeqE9pGv-1CfMw">
+        <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+      </edges>
+    </rhs>
+    <attributeConditions xmi:id="_y39goBLYEeqE9pGv-1CfMw" name="mte" conditionText="t3&lt;t1"/>
+    <mappings xmi:id="_mn75cBLYEeqE9pGv-1CfMw" origin="_mn7SYBLYEeqE9pGv-1CfMw" image="_mn7SYRLYEeqE9pGv-1CfMw"/>
+    <mappings xmi:id="_qFSfMhLaEeqE9pGv-1CfMw" origin="_qFSfMBLaEeqE9pGv-1CfMw" image="_qFSfMRLaEeqE9pGv-1CfMw"/>
+    <multiRules xmi:id="_ZZ78MxLaEeqE9pGv-1CfMw">
+      <parameters xmi:id="_ZZ9KUBLaEeqE9pGv-1CfMw" name="t" kind="VAR">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </parameters>
+      <parameters xmi:id="_ZZ9KURLaEeqE9pGv-1CfMw" name="t1" kind="VAR">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </parameters>
+      <parameters xmi:id="_ZZ9KUhLaEeqE9pGv-1CfMw" name="t2" kind="VAR">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </parameters>
+      <parameters xmi:id="_jByKwBLbEeqE9pGv-1CfMw" name="t3" kind="VAR">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </parameters>
+      <lhs xmi:id="_ZZ78NBLaEeqE9pGv-1CfMw" name="Lhs">
+        <nodes xmi:id="_ZZ78ORLaEeqE9pGv-1CfMw" name="ae" incoming="_rHY1YxLaEeqE9pGv-1CfMw">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+          <attributes xmi:id="_ZZ78OhLaEeqE9pGv-1CfMw" value="t1">
+            <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_ZZ78MBLaEeqE9pGv-1CfMw" name="aen" incoming="_rd4p0BLaEeqE9pGv-1CfMw">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+          <attributes xmi:id="_ceFpsBLaEeqE9pGv-1CfMw" value="t2">
+            <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_qFSfNRLaEeqE9pGv-1CfMw" outgoing="_rHY1YxLaEeqE9pGv-1CfMw _rd4p0BLaEeqE9pGv-1CfMw">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+        </nodes>
+        <edges xmi:id="_rHY1YxLaEeqE9pGv-1CfMw" source="_qFSfNRLaEeqE9pGv-1CfMw" target="_ZZ78ORLaEeqE9pGv-1CfMw">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+        </edges>
+        <edges xmi:id="_rd4p0BLaEeqE9pGv-1CfMw" source="_qFSfNRLaEeqE9pGv-1CfMw" target="_ZZ78MBLaEeqE9pGv-1CfMw">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_ZZ78NRLaEeqE9pGv-1CfMw" name="Rhs">
+        <nodes xmi:id="_ZZ78NhLaEeqE9pGv-1CfMw" name="ae" incoming="_rHY1YhLaEeqE9pGv-1CfMw">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+          <attributes xmi:id="_ZZ78NxLaEeqE9pGv-1CfMw" value="t1">
+            <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_ZZ78MRLaEeqE9pGv-1CfMw" name="aen" incoming="_rd4p0RLaEeqE9pGv-1CfMw">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec"/>
+          <attributes xmi:id="_ceFpsRLaEeqE9pGv-1CfMw" value="t2-t1">
+            <type href="http://www.kcl.ac.uk/metamodels/pls11#//ActionExec/timer"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_qFSfMxLaEeqE9pGv-1CfMw" outgoing="_rHY1YhLaEeqE9pGv-1CfMw _rd4p0RLaEeqE9pGv-1CfMw">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel"/>
+        </nodes>
+        <edges xmi:id="_rHY1YhLaEeqE9pGv-1CfMw" source="_qFSfMxLaEeqE9pGv-1CfMw" target="_ZZ78NhLaEeqE9pGv-1CfMw">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+        </edges>
+        <edges xmi:id="_rd4p0RLaEeqE9pGv-1CfMw" source="_qFSfMxLaEeqE9pGv-1CfMw" target="_ZZ78MRLaEeqE9pGv-1CfMw">
+          <type href="http://www.kcl.ac.uk/metamodels/pls11#//ProductionLineModel/actionexecs"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_ZZ78PBLaEeqE9pGv-1CfMw" origin="_ZZ78ORLaEeqE9pGv-1CfMw" image="_ZZ78NhLaEeqE9pGv-1CfMw"/>
+      <mappings xmi:id="_ZZ78MhLaEeqE9pGv-1CfMw" origin="_ZZ78MBLaEeqE9pGv-1CfMw" image="_ZZ78MRLaEeqE9pGv-1CfMw"/>
+      <mappings xmi:id="_qFSfNxLaEeqE9pGv-1CfMw" origin="_qFSfNRLaEeqE9pGv-1CfMw" image="_qFSfMxLaEeqE9pGv-1CfMw"/>
+      <multiMappings xmi:id="_ZZ78OBLaEeqE9pGv-1CfMw" origin="_mn7SYRLYEeqE9pGv-1CfMw" image="_ZZ78NhLaEeqE9pGv-1CfMw"/>
+      <multiMappings xmi:id="_ZZ78OxLaEeqE9pGv-1CfMw" origin="_mn7SYBLYEeqE9pGv-1CfMw" image="_ZZ78ORLaEeqE9pGv-1CfMw"/>
+      <multiMappings xmi:id="_qFSfNBLaEeqE9pGv-1CfMw" origin="_qFSfMRLaEeqE9pGv-1CfMw" image="_qFSfMxLaEeqE9pGv-1CfMw"/>
+      <multiMappings xmi:id="_qFSfNhLaEeqE9pGv-1CfMw" origin="_qFSfMBLaEeqE9pGv-1CfMw" image="_qFSfNRLaEeqE9pGv-1CfMw"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_jGLqABSFEeqE9pGv-1CfMw" name="step" subUnits="_XryDMBLYEeqE9pGv-1CfMw _oLA10BSFEeqE9pGv-1CfMw"/>
+  <units xsi:type="henshin:IndependentUnit" xmi:id="_oLA10BSFEeqE9pGv-1CfMw" name="rls" subUnits="_ECtn4AcREeqCBumwOxKgRg _Y5RAAAcREeqCBumwOxKgRg _zNT7kAcREeqCBumwOxKgRg _MJXwgAcSEeqCBumwOxKgRg _c8r8sAcSEeqCBumwOxKgRg _0voNcAcSEeqCBumwOxKgRg _bdoI8BIvEeqE9pGv-1CfMw _mc2vQBIyEeqE9pGv-1CfMw _wWcNoBKtEeqE9pGv-1CfMw _ZS9uIBKxEeqE9pGv-1CfMw _VCNGwBK1EeqE9pGv-1CfMw _eRSf8BLKEeqE9pGv-1CfMw"/>
+  <units xsi:type="henshin:IteratedUnit" xmi:id="_SUicUBSGEeqE9pGv-1CfMw" name="exec" subUnit="_tj8z8BSGEeqE9pGv-1CfMw" iterations="1000"/>
+  <units xsi:type="henshin:ConditionalUnit" xmi:id="_tj8z8BSGEeqE9pGv-1CfMw" name="step2" if="_XryDMBLYEeqE9pGv-1CfMw" then="_oLA10BSFEeqE9pGv-1CfMw" else="_oLA10BSFEeqE9pGv-1CfMw"/>
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_-lxRsBXwEeqsLdo6KL0Cqw" name="seq" subUnits="_bdoI8BIvEeqE9pGv-1CfMw _XryDMBLYEeqE9pGv-1CfMw _ECtn4AcREeqCBumwOxKgRg _mc2vQBIyEeqE9pGv-1CfMw _XryDMBLYEeqE9pGv-1CfMw _Y5RAAAcREeqCBumwOxKgRg _wWcNoBKtEeqE9pGv-1CfMw _wWcNoBKtEeqE9pGv-1CfMw _XryDMBLYEeqE9pGv-1CfMw _zNT7kAcREeqCBumwOxKgRg _zNT7kAcREeqCBumwOxKgRg _ZS9uIBKxEeqE9pGv-1CfMw _XryDMBLYEeqE9pGv-1CfMw _MJXwgAcSEeqCBumwOxKgRg _wWcNoBKtEeqE9pGv-1CfMw _XryDMBLYEeqE9pGv-1CfMw _zNT7kAcREeqCBumwOxKgRg _eRSf8BLKEeqE9pGv-1CfMw _XryDMBLYEeqE9pGv-1CfMw _c8r8sAcSEeqCBumwOxKgRg _wWcNoBKtEeqE9pGv-1CfMw _XryDMBLYEeqE9pGv-1CfMw _zNT7kAcREeqCBumwOxKgRg _VCNGwBK1EeqE9pGv-1CfMw _XryDMBLYEeqE9pGv-1CfMw _0voNcAcSEeqCBumwOxKgRg"/>
+</henshin:Module>

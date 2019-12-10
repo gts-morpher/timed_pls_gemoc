@@ -2,6 +2,7 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="pls11" nsURI="http://www.kcl.ac.uk/metamodels/pls11" nsPrefix="pls11">
   <eClassifiers xsi:type="ecore:EClass" name="ProductionLineModel">
+    <eAnnotations source="aspect"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="elts" upperBound="-1" eType="#//NamedElement"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="parts" upperBound="-1"

@@ -744,6 +744,7 @@ public class pls11PackageImpl extends EPackageImpl implements pls11Package {
 	 */
 	protected void createAspectAnnotations() {
 		String source = "aspect";
+		addAnnotation(productionLineModelEClass, source, new String[] {});
 		addAnnotation(getProductionLineModel_Parts(), source, new String[] {});
 		addAnnotation(getProductionLineModel_Actionexecs(), source, new String[] {});
 		addAnnotation(getProductionLineModel_Clock(), source, new String[] {});

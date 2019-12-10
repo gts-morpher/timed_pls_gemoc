@@ -1,6 +1,7 @@
 @namespace(uri="http://www.kcl.ac.uk/metamodels/pls11", prefix="pls11")
 package pls11;
 
+@aspect
 class ProductionLineModel {
   val NamedElement[*] elts;
 

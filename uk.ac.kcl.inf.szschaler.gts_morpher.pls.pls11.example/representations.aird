@@ -3,6 +3,7 @@
   <viewpoint:DAnalysis xmi:id="_5qGrgBsrEeqvcbYGNKGtSg" selectedViews="_W6hPkBtCEeq-sppd0FtLlA" version="13.0.0.201804031646">
     <semanticResources>example.pls</semanticResources>
     <semanticResources>gemoc-gen/execution/execution-20191210_124614/example.pls</semanticResources>
+    <semanticResources>gemoc-gen/execution/execution-20191210_135532/example.pls</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_4DI4QBssEeq6AIJzqwl6ig">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_4T_XtRssEeq6AIJzqwl6ig" name="new Production Line Diagram" repPath="#_4TC8gBssEeq6AIJzqwl6ig">

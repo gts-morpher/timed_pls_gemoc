@@ -22,7 +22,7 @@ public class Services extends AbstractGemocAnimatorServices  {
 	@Override
 	protected List<StringCouple> getRepresentationRefreshList() {
 		final List<StringCouple> res = new ArrayList<StringCouple>();
-		res.add(new StringCouple("Production Line Diagram", "Default"));
+		res.add(new StringCouple("Production Line Diagram", null));
 		return res;
 	}
 }

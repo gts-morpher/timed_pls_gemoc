@@ -644,7 +644,7 @@
     <mappings xmi:id="_0r2kkhIyEeqE9pGv-1CfMw" origin="_0r2kkBIyEeqE9pGv-1CfMw" image="_0r2kkRIyEeqE9pGv-1CfMw"/>
     <mappings xmi:id="_17b9IhIyEeqE9pGv-1CfMw" origin="_17b9IBIyEeqE9pGv-1CfMw" image="_17b9IRIyEeqE9pGv-1CfMw"/>
   </units>
-  <units xsi:type="henshin:Rule" xmi:id="_wWcNoBKtEeqE9pGv-1CfMw" name="MoveInitialization" injectiveMatching="false">
+  <units xsi:type="henshin:Rule" xmi:id="_wWcNoBKtEeqE9pGv-1CfMw" name="MoveInitialization" description="">
     <lhs xmi:id="_wWhGIBKtEeqE9pGv-1CfMw" name="Lhs">
       <nodes xmi:id="_1synQBKtEeqE9pGv-1CfMw" name="c" outgoing="_QaTLsBKuEeqE9pGv-1CfMw _RP8aQBKuEeqE9pGv-1CfMw">
         <type href="http://www.kcl.ac.uk/metamodels/pls11#//Conveyor"/>
@@ -775,7 +775,7 @@
     <mappings xmi:id="_Hy3b0hKuEeqE9pGv-1CfMw" origin="_Hy3b0BKuEeqE9pGv-1CfMw" image="_Hy3b0RKuEeqE9pGv-1CfMw"/>
     <mappings xmi:id="_cUKVoRKuEeqE9pGv-1CfMw" origin="_cUJukBKuEeqE9pGv-1CfMw" image="_cUKVoBKuEeqE9pGv-1CfMw"/>
   </units>
-  <units xsi:type="henshin:Rule" xmi:id="_ZS9uIBKxEeqE9pGv-1CfMw" name="PolishInitialization" injectiveMatching="false">
+  <units xsi:type="henshin:Rule" xmi:id="_ZS9uIBKxEeqE9pGv-1CfMw" name="PolishInitialization">
     <lhs xmi:id="_ZTItQBKxEeqE9pGv-1CfMw" name="Lhs">
       <nodes xmi:id="_m4GHEBKxEeqE9pGv-1CfMw" name="t" incoming="_j1kUwBKyEeqE9pGv-1CfMw" outgoing="_x9n0kBKyEeqE9pGv-1CfMw">
         <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
@@ -979,7 +979,7 @@
     <mappings xmi:id="_scu0UhKxEeqE9pGv-1CfMw" origin="_scu0UBKxEeqE9pGv-1CfMw" image="_scu0URKxEeqE9pGv-1CfMw"/>
     <mappings xmi:id="_xhsjABKxEeqE9pGv-1CfMw" origin="_xhr78BKxEeqE9pGv-1CfMw" image="_xhr78RKxEeqE9pGv-1CfMw"/>
   </units>
-  <units xsi:type="henshin:Rule" xmi:id="_VCNGwBK1EeqE9pGv-1CfMw" name="PackInitialization" injectiveMatching="false">
+  <units xsi:type="henshin:Rule" xmi:id="_VCNGwBK1EeqE9pGv-1CfMw" name="PackInitialization">
     <lhs xmi:id="_VDJh8BK1EeqE9pGv-1CfMw" name="Lhs">
       <nodes xmi:id="_-c3-ABLHEeqE9pGv-1CfMw" name="t" incoming="_maJIUBLIEeqE9pGv-1CfMw" outgoing="_nKuQsBLIEeqE9pGv-1CfMw">
         <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>
@@ -1110,7 +1110,7 @@
     <mappings xmi:id="_I0aZkRLIEeqE9pGv-1CfMw" origin="_I0ZygBLIEeqE9pGv-1CfMw" image="_I0aZkBLIEeqE9pGv-1CfMw"/>
     <mappings xmi:id="_d2PNkhLIEeqE9pGv-1CfMw" origin="_d2PNkBLIEeqE9pGv-1CfMw" image="_d2PNkRLIEeqE9pGv-1CfMw"/>
   </units>
-  <units xsi:type="henshin:Rule" xmi:id="_eRSf8BLKEeqE9pGv-1CfMw" name="AssembleInitialization" injectiveMatching="false">
+  <units xsi:type="henshin:Rule" xmi:id="_eRSf8BLKEeqE9pGv-1CfMw" name="AssembleInitialization">
     <lhs xmi:id="_eRUVIBLKEeqE9pGv-1CfMw" name="Lhs">
       <nodes xmi:id="_KQSaUBLLEeqE9pGv-1CfMw" name="t" incoming="_jgmoABLLEeqE9pGv-1CfMw" outgoing="_kZ_uIBLLEeqE9pGv-1CfMw _k9WS0BLLEeqE9pGv-1CfMw">
         <type href="http://www.kcl.ac.uk/metamodels/pls11#//Tray"/>

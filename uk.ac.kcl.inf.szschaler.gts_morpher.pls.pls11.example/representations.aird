@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:pls11="http://www.kcl.ac.uk/metamodels/pls11" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_5qGrgBsrEeqvcbYGNKGtSg" selectedViews="_4DI4QBssEeq6AIJzqwl6ig" version="13.0.0.201804031646">
+    <semanticResources>example.pls</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_4DI4QBssEeq6AIJzqwl6ig">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_4T_XtRssEeq6AIJzqwl6ig" name="new Production Line Diagram" repPath="#_4TC8gBssEeq6AIJzqwl6ig">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']"/>
+        <target xmi:type="pls11:ProductionLineModel" href="example.pls#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_4T_XsBssEeq6AIJzqwl6ig" name="new Production Line Diagram" uid="_4TC8gBssEeq6AIJzqwl6ig">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_4T_XsRssEeq6AIJzqwl6ig" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_4T_XshssEeq6AIJzqwl6ig"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_4UoQ4BssEeq6AIJzqwl6ig" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_4UoQ4RssEeq6AIJzqwl6ig" type="Sirius" element="_4T_XsBssEeq6AIJzqwl6ig" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_MtF-0BstEeq6AIJzqwl6ig" type="2001" element="_MsndsBstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_MtQW4BstEeq6AIJzqwl6ig" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_MtQW4RstEeq6AIJzqwl6ig" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MtQW4hstEeq6AIJzqwl6ig" type="3006" element="_Msx1wBstEeq6AIJzqwl6ig">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_MtQW4xstEeq6AIJzqwl6ig" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MtQW5BstEeq6AIJzqwl6ig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MtF-0RstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MtF-0hstEeq6AIJzqwl6ig" x="10" y="10" width="71" height="41"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_d1BwIBstEeq6AIJzqwl6ig" type="2001" element="_d03YEBstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_d1BwIxstEeq6AIJzqwl6ig" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_d1BwJBstEeq6AIJzqwl6ig" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_d1LhIBstEeq6AIJzqwl6ig" type="3005" element="_d03YERstEeq6AIJzqwl6ig">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_d1LhIRstEeq6AIJzqwl6ig" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d1LhIhstEeq6AIJzqwl6ig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_d1BwIRstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d1BwIhstEeq6AIJzqwl6ig" x="55" y="90" width="65" height="67"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_npU7wBstEeq6AIJzqwl6ig" type="2001" element="_no2aoBstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_npU7wxstEeq6AIJzqwl6ig" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_npU7xBstEeq6AIJzqwl6ig" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_npfT2hstEeq6AIJzqwl6ig" type="3005" element="_no2aoRstEeq6AIJzqwl6ig">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_npfT2xstEeq6AIJzqwl6ig" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npfT3BstEeq6AIJzqwl6ig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_npU7wRstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npU7whstEeq6AIJzqwl6ig" x="50" y="235" width="75" height="69"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_npU7xRstEeq6AIJzqwl6ig" type="2003" element="_npAysBstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_npU7yBstEeq6AIJzqwl6ig" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_npfT0BstEeq6AIJzqwl6ig" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_npfT0RstEeq6AIJzqwl6ig"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_npfT0hstEeq6AIJzqwl6ig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_npU7xhstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npU7xxstEeq6AIJzqwl6ig" x="245" y="99"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_npfT0xstEeq6AIJzqwl6ig" type="2003" element="_npAyshstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_npfT1hstEeq6AIJzqwl6ig" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_npfT1xstEeq6AIJzqwl6ig" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_npfT2BstEeq6AIJzqwl6ig"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_npfT2RstEeq6AIJzqwl6ig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_npfT1BstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npfT1RstEeq6AIJzqwl6ig" x="245" y="245"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_u4AwBRstEeq6AIJzqwl6ig" type="2003" element="_u32X8BstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_u4AwCBstEeq6AIJzqwl6ig" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_u4AwCRstEeq6AIJzqwl6ig" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_u4AwChstEeq6AIJzqwl6ig"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_u4AwCxstEeq6AIJzqwl6ig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_u4AwBhstEeq6AIJzqwl6ig" fontColor="16777215" fontName="Segoe UI" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u4AwBxstEeq6AIJzqwl6ig" x="425" y="165"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_1YcXIBstEeq6AIJzqwl6ig" type="2001" element="_1YSmIBstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_1YcXIxstEeq6AIJzqwl6ig" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_1YcXJBstEeq6AIJzqwl6ig" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1YcXJRstEeq6AIJzqwl6ig" type="3005" element="_1YSmIRstEeq6AIJzqwl6ig">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_1YcXJhstEeq6AIJzqwl6ig" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1YcXJxstEeq6AIJzqwl6ig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_1YcXIRstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1YcXIhstEeq6AIJzqwl6ig" x="600" y="156" width="70" height="60"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_429scBstEeq6AIJzqwl6ig" type="2003" element="_42z7cBstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_429scxstEeq6AIJzqwl6ig" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_429sdBstEeq6AIJzqwl6ig" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_429sdRstEeq6AIJzqwl6ig"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_429sdhstEeq6AIJzqwl6ig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_429scRstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_429schstEeq6AIJzqwl6ig" x="750" y="161"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_4UoQ4hssEeq6AIJzqwl6ig"/>
+        <edges xmi:type="notation:Edge" xmi:id="_nppE0BstEeq6AIJzqwl6ig" type="4001" element="_npKjsBstEeq6AIJzqwl6ig" source="_d1BwIBstEeq6AIJzqwl6ig" target="_npU7xRstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_nppE1BstEeq6AIJzqwl6ig" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nppE1RstEeq6AIJzqwl6ig" x="-14" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nppE1hstEeq6AIJzqwl6ig" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nppE1xstEeq6AIJzqwl6ig" x="12" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nppE2BstEeq6AIJzqwl6ig" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nppE2RstEeq6AIJzqwl6ig" x="7" y="-7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_nppE0RstEeq6AIJzqwl6ig"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_nppE0hstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nppE0xstEeq6AIJzqwl6ig" points="[33, 0, -174, 0]$[158, 0, -49, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_npzc4BstEeq6AIJzqwl6ig" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_npzc4RstEeq6AIJzqwl6ig" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_npzc4hstEeq6AIJzqwl6ig" type="4001" element="_npKjsxstEeq6AIJzqwl6ig" source="_npU7wBstEeq6AIJzqwl6ig" target="_npfT0xstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_npzc5hstEeq6AIJzqwl6ig" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npzc5xstEeq6AIJzqwl6ig" x="-4" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_npzc6BstEeq6AIJzqwl6ig" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npzc6RstEeq6AIJzqwl6ig" x="-11" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_npzc6hstEeq6AIJzqwl6ig" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npzc6xstEeq6AIJzqwl6ig" x="-15"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_npzc4xstEeq6AIJzqwl6ig"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_npzc5BstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_npzc5RstEeq6AIJzqwl6ig" points="[38, 0, -169, 0]$[158, 0, -49, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_npzc7BstEeq6AIJzqwl6ig" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_npzc7RstEeq6AIJzqwl6ig" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_u4AwDBstEeq6AIJzqwl6ig" type="4001" element="_u4AI8BstEeq6AIJzqwl6ig" source="_npU7xRstEeq6AIJzqwl6ig" target="_u4AwBRstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_u4AwEBstEeq6AIJzqwl6ig" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u4AwERstEeq6AIJzqwl6ig" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_u4AwEhstEeq6AIJzqwl6ig" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u4AwExstEeq6AIJzqwl6ig" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_u4AwFBstEeq6AIJzqwl6ig" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u4AwFRstEeq6AIJzqwl6ig" x="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_u4AwDRstEeq6AIJzqwl6ig"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_u4AwDhstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_u4AwDxstEeq6AIJzqwl6ig" points="[49, 0, -113, -62]$[162, 0, 0, -62]$[162, 42, 0, -20]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_u4AwFhstEeq6AIJzqwl6ig" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_u4AwFxstEeq6AIJzqwl6ig" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_u4AwGBstEeq6AIJzqwl6ig" type="4001" element="_u4AwAhstEeq6AIJzqwl6ig" source="_npfT0xstEeq6AIJzqwl6ig" target="_u4AwBRstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_u4AwHBstEeq6AIJzqwl6ig" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u4AwHRstEeq6AIJzqwl6ig" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_u4AwHhstEeq6AIJzqwl6ig" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u4AwHxstEeq6AIJzqwl6ig" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_u4AwIBstEeq6AIJzqwl6ig" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u4AwIRstEeq6AIJzqwl6ig" x="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_u4AwGRstEeq6AIJzqwl6ig"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_u4AwGhstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_u4AwGxstEeq6AIJzqwl6ig" points="[49, 0, -113, 84]$[162, 0, 0, 84]$[162, -63, 0, 21]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_u4AwIhstEeq6AIJzqwl6ig" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_u4AwIxstEeq6AIJzqwl6ig" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_1YcXKBstEeq6AIJzqwl6ig" type="4001" element="_1YSmIhstEeq6AIJzqwl6ig" source="_u4AwBRstEeq6AIJzqwl6ig" target="_1YcXIBstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_1YcXLBstEeq6AIJzqwl6ig" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1YcXLRstEeq6AIJzqwl6ig" x="-4" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1YcXLhstEeq6AIJzqwl6ig" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1YcXLxstEeq6AIJzqwl6ig" x="2" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1YcXMBstEeq6AIJzqwl6ig" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1YcXMRstEeq6AIJzqwl6ig" x="3" y="-9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_1YcXKRstEeq6AIJzqwl6ig"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_1YcXKhstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1YcXKxstEeq6AIJzqwl6ig" points="[31, 0, -148, 0]$[144, 0, -35, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1YcXMhstEeq6AIJzqwl6ig" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1YcXMxstEeq6AIJzqwl6ig" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_429sdxstEeq6AIJzqwl6ig" type="4001" element="_42z7chstEeq6AIJzqwl6ig" source="_1YcXIBstEeq6AIJzqwl6ig" target="_429scBstEeq6AIJzqwl6ig">
+          <children xmi:type="notation:Node" xmi:id="_429sexstEeq6AIJzqwl6ig" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_429sfBstEeq6AIJzqwl6ig" x="-3" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_429sfRstEeq6AIJzqwl6ig" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_429sfhstEeq6AIJzqwl6ig" x="2" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_429sfxstEeq6AIJzqwl6ig" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_429sgBstEeq6AIJzqwl6ig" x="2" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_429seBstEeq6AIJzqwl6ig"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_429seRstEeq6AIJzqwl6ig" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_429sehstEeq6AIJzqwl6ig" points="[35, 0, -129, 0]$[115, 0, -49, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_429sgRstEeq6AIJzqwl6ig" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_429sghstEeq6AIJzqwl6ig" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_MsndsBstEeq6AIJzqwl6ig" name="Clock: 0.0" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="pls11:ProductionLineModel" href="example.pls#/"/>
+      <semanticElements xmi:type="pls11:ProductionLineModel" href="example.pls#/"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:GaugeCompositeStyle" xmi:id="_Msx1wBstEeq6AIJzqwl6ig" showIcon="false" labelPosition="node">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:GaugeCompositeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Clock']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Clock']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_d03YEBstEeq6AIJzqwl6ig" name="genHead" outgoingEdges="_npKjsBstEeq6AIJzqwl6ig" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="pls11:GenHead" href="example.pls#//@elts.0"/>
+      <semanticElements xmi:type="pls11:GenHead" href="example.pls#//@elts.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_d03YERstEeq6AIJzqwl6ig" showIcon="false" workspacePath="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/icons/GenHead.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='GenHead']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='GenHead']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_no2aoBstEeq6AIJzqwl6ig" name="genHandle" outgoingEdges="_npKjsxstEeq6AIJzqwl6ig" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="pls11:GenHandle" href="example.pls#//@elts.2"/>
+      <semanticElements xmi:type="pls11:GenHandle" href="example.pls#//@elts.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_no2aoRstEeq6AIJzqwl6ig" showIcon="false" workspacePath="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/icons/GenHandle.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='GenHandle']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='GenHandle']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_npAysBstEeq6AIJzqwl6ig" name="0" outgoingEdges="_u4AI8BstEeq6AIJzqwl6ig" incomingEdges="_npKjsBstEeq6AIJzqwl6ig">
+      <target xmi:type="pls11:Conveyor" href="example.pls#//@elts.1"/>
+      <semanticElements xmi:type="pls11:Conveyor" href="example.pls#//@elts.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_npAysRstEeq6AIJzqwl6ig" showIcon="false" workspacePath="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/icons/Conveyor.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='ConveyorC']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='ConveyorC']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_npAyshstEeq6AIJzqwl6ig" name="0" outgoingEdges="_u4AwAhstEeq6AIJzqwl6ig" incomingEdges="_npKjsxstEeq6AIJzqwl6ig">
+      <target xmi:type="pls11:Conveyor" href="example.pls#//@elts.3"/>
+      <semanticElements xmi:type="pls11:Conveyor" href="example.pls#//@elts.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_npAysxstEeq6AIJzqwl6ig" showIcon="false" workspacePath="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/icons/Conveyor.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='ConveyorC']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='ConveyorC']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_npKjsBstEeq6AIJzqwl6ig" sourceNode="_d03YEBstEeq6AIJzqwl6ig" targetNode="_npAysBstEeq6AIJzqwl6ig">
+      <target xmi:type="pls11:GenHead" href="example.pls#//@elts.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_npKjsRstEeq6AIJzqwl6ig" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@edgeMappings[name='MachineOut']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_npKjshstEeq6AIJzqwl6ig"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@edgeMappings[name='MachineOut']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_npKjsxstEeq6AIJzqwl6ig" sourceNode="_no2aoBstEeq6AIJzqwl6ig" targetNode="_npAyshstEeq6AIJzqwl6ig">
+      <target xmi:type="pls11:GenHandle" href="example.pls#//@elts.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_npKjtBstEeq6AIJzqwl6ig" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@edgeMappings[name='MachineOut']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_npKjtRstEeq6AIJzqwl6ig"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@edgeMappings[name='MachineOut']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_u32X8BstEeq6AIJzqwl6ig" name="0" outgoingEdges="_1YSmIhstEeq6AIJzqwl6ig" incomingEdges="_u4AI8BstEeq6AIJzqwl6ig _u4AwAhstEeq6AIJzqwl6ig">
+      <target xmi:type="pls11:Tray" href="example.pls#//@elts.4"/>
+      <semanticElements xmi:type="pls11:Tray" href="example.pls#//@elts.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_u32X8RstEeq6AIJzqwl6ig" showIcon="false" labelColor="255,255,255" workspacePath="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/icons/Tray.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='TrayC']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='TrayC']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_u4AI8BstEeq6AIJzqwl6ig" sourceNode="_npAysBstEeq6AIJzqwl6ig" targetNode="_u32X8BstEeq6AIJzqwl6ig">
+      <target xmi:type="pls11:Conveyor" href="example.pls#//@elts.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_u4AwABstEeq6AIJzqwl6ig" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@edgeMappings[name='transfer']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_u4AwARstEeq6AIJzqwl6ig"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@edgeMappings[name='transfer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_u4AwAhstEeq6AIJzqwl6ig" sourceNode="_npAyshstEeq6AIJzqwl6ig" targetNode="_u32X8BstEeq6AIJzqwl6ig">
+      <target xmi:type="pls11:Conveyor" href="example.pls#//@elts.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_u4AwAxstEeq6AIJzqwl6ig" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@edgeMappings[name='transfer']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_u4AwBBstEeq6AIJzqwl6ig"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@edgeMappings[name='transfer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_1YSmIBstEeq6AIJzqwl6ig" name="assemble" outgoingEdges="_42z7chstEeq6AIJzqwl6ig" incomingEdges="_1YSmIhstEeq6AIJzqwl6ig" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="pls11:Assembler" href="example.pls#//@elts.5"/>
+      <semanticElements xmi:type="pls11:Assembler" href="example.pls#//@elts.5"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_1YSmIRstEeq6AIJzqwl6ig" showIcon="false" labelPosition="node" workspacePath="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/icons/Assembler.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Assembler']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Assembler']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_1YSmIhstEeq6AIJzqwl6ig" sourceNode="_u32X8BstEeq6AIJzqwl6ig" targetNode="_1YSmIBstEeq6AIJzqwl6ig">
+      <target xmi:type="pls11:Tray" href="example.pls#//@elts.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_1YSmIxstEeq6AIJzqwl6ig" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@edgeMappings[name='in']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_1YSmJBstEeq6AIJzqwl6ig"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@edgeMappings[name='in']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_42z7cBstEeq6AIJzqwl6ig" name="0" incomingEdges="_42z7chstEeq6AIJzqwl6ig">
+      <target xmi:type="pls11:Conveyor" href="example.pls#//@elts.6"/>
+      <semanticElements xmi:type="pls11:Conveyor" href="example.pls#//@elts.6"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_42z7cRstEeq6AIJzqwl6ig" showIcon="false" workspacePath="/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/icons/Conveyor.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='ConveyorC']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='ConveyorC']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_42z7chstEeq6AIJzqwl6ig" sourceNode="_1YSmIBstEeq6AIJzqwl6ig" targetNode="_42z7cBstEeq6AIJzqwl6ig">
+      <target xmi:type="pls11:Assembler" href="example.pls#//@elts.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_42z7cxstEeq6AIJzqwl6ig" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@edgeMappings[name='MachineOut']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_42z7dBstEeq6AIJzqwl6ig"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@edgeMappings[name='MachineOut']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_4T_XtBssEeq6AIJzqwl6ig"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.odesign/description/pls11.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer"/>
+    <target xmi:type="pls11:ProductionLineModel" href="example.pls#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

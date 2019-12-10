@@ -28,7 +28,7 @@
             id="uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.presentation.pls11EditorID"
             name="%_UI_pls11Editor_label"
             icon="icons/full/obj16/pls11ModelFile.gif"
-            extensions="pls11"
+            extensions="pls"
             class="uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.presentation.pls11Editor"
             contributorClass="uk.ac.kcl.inf.szschaler.gts_morpher.pls.pls11.presentation.pls11ActionBarContributor">
       </editor>
